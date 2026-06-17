@@ -24,6 +24,7 @@ Build the approved project.
 
 ## Required Output
 
+- `IMPL-001-implementation-notes.json` / `IMPL-001-implementation-notes.md`
 - Working project code
 - Updated status
 - Task summaries

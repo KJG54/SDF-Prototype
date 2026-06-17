@@ -22,8 +22,8 @@ Prove the project works for the human.
 
 ## Required Output
 
-- Verification report
-- `UAT-001-user-acceptance-testing.md/json` when human testing is needed
+- `VERIFY-001-verification-report.json` / `VERIFY-001-verification-report.md`
+- `UAT-001-user-acceptance-testing.json` / `UAT-001-user-acceptance-testing.md` when human testing is needed
 - Human-action files when the human must test something manually
 - Phase gate
 - Phase summary

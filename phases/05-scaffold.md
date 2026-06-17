@@ -19,6 +19,7 @@ Create the project skeleton and workspace.
 
 ## Required Output
 
+- `SCAFFOLD-001-scaffold-notes.json` / `SCAFFOLD-001-scaffold-notes.md`
 - Workspace skeleton
 - Project status update
 - Phase gate

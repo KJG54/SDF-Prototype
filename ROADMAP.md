@@ -11,6 +11,14 @@
 - Manual session summaries
 - Manual slash-command documentation
 - Project checklist templates for future command automation
+- Framework GitHub publishing with local projects and private memory excluded
+
+## Next Recommended Work
+
+1. Design command contracts for `/start`, `/status`, `/gate`, and one command per phase.
+2. Define the minimum checklist state transitions each command must perform.
+3. Add lightweight manual validation guidance for artifact pairs before automating validation.
+4. Test the tightened process with another small project.
 
 ## Later
 
@@ -26,10 +34,3 @@
 - GUI for nontechnical users
 - GitHub creation and release automation
 - Reusable code templates discovered through real projects
-
-## Next Recommended Work
-
-1. Continue testing Software Factory with another small project after these process fixes.
-2. Decide whether to initialize Git for Software Factory itself.
-3. Decide whether scratchpad files should be public or local-only before the first framework commit.
-4. Continue improving patterns based on the next real project.

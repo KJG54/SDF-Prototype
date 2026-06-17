@@ -1,7 +1,7 @@
 {
   "framework": "Software Factory",
   "version": "0.1.0",
-  "active_project": "recipe-keeper",
+  "active_project": "",
   "default_explanation_level": "balanced",
   "default_model_policy": "balanced",
   "default_ide": "Visual Studio Code",

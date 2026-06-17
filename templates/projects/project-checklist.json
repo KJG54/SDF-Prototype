@@ -10,7 +10,7 @@
       "name": "Startup",
       "status": "pending",
       "requires_human_approval": false,
-      "required_artifacts": ["STARTUP-001"],
+      "required_artifacts": ["STARTUP-001", "STATUS", "PROJECT-CHECKLIST"],
       "blocking_issues": [],
       "next_action": ""
     },
@@ -55,7 +55,7 @@
       "name": "Scaffold",
       "status": "pending",
       "requires_human_approval": true,
-      "required_artifacts": ["SUMMARY-001", "GATE-001"],
+      "required_artifacts": ["SCAFFOLD-001", "SUMMARY-001", "GATE-001"],
       "blocking_issues": [],
       "next_action": ""
     },
@@ -64,7 +64,7 @@
       "name": "Implementation",
       "status": "pending",
       "requires_human_approval": true,
-      "required_artifacts": ["SUMMARY-001", "GATE-001"],
+      "required_artifacts": ["IMPL-001", "SUMMARY-001", "GATE-001"],
       "blocking_issues": [],
       "next_action": ""
     },
@@ -73,7 +73,7 @@
       "name": "Testing / Verification",
       "status": "pending",
       "requires_human_approval": true,
-      "required_artifacts": ["UAT-001", "SUMMARY-001", "GATE-001"],
+      "required_artifacts": ["VERIFY-001", "UAT-001 when human testing is needed", "SUMMARY-001", "GATE-001"],
       "blocking_issues": [],
       "next_action": ""
     },
@@ -82,7 +82,7 @@
       "name": "Review",
       "status": "pending",
       "requires_human_approval": true,
-      "required_artifacts": ["SUMMARY-001", "GATE-001"],
+      "required_artifacts": ["REVIEW-001", "SUMMARY-001", "GATE-001"],
       "blocking_issues": [],
       "next_action": ""
     },
@@ -91,7 +91,7 @@
       "name": "Ship",
       "status": "pending",
       "requires_human_approval": true,
-      "required_artifacts": ["SUMMARY-001", "GATE-001"],
+      "required_artifacts": ["SHIP-001", "SUMMARY-001", "GATE-001"],
       "blocking_issues": [],
       "next_action": ""
     },

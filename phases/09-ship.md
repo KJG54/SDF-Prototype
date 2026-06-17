@@ -23,6 +23,7 @@ Package and prepare the project for other people to use.
 
 ## Required Output
 
+- `SHIP-001-shipping-plan.json` / `SHIP-001-shipping-plan.md`
 - Ship summary
 - Release notes
 - GitHub-ready workspace

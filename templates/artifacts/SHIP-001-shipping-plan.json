@@ -1,0 +1,14 @@
+{
+  "id": "SHIP-001",
+  "type": "shipping_plan",
+  "project": "",
+  "shipping_target": "",
+  "public_private": "",
+  "prepared_for_shipping": [],
+  "release_notes": "",
+  "setup_run_instructions_checked": "",
+  "secrets_private_files_check": "",
+  "human_actions_required": [],
+  "deferred_shipping_work": [],
+  "final_location": ""
+}

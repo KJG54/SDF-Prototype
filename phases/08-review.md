@@ -20,7 +20,7 @@ Confirm the project is what the human meant to build and is ready to ship.
 
 ## Required Output
 
-- Review report
+- `REVIEW-001-review-report.json` / `REVIEW-001-review-report.md`
 - Acceptance decision
 - Known issues / deferred ideas update
 - Phase gate

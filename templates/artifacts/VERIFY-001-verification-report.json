@@ -1,0 +1,14 @@
+{
+  "id": "VERIFY-001",
+  "type": "verification_report",
+  "project": "",
+  "verification_scope": "",
+  "automated_checks": [],
+  "manual_checks": [],
+  "user_acceptance_testing": "",
+  "passed": [],
+  "failed": [],
+  "fixed_during_verification": [],
+  "deferred_with_approval": [],
+  "remaining_risks": []
+}

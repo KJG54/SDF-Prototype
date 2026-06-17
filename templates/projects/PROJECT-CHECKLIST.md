@@ -16,17 +16,17 @@ startup | vision | requirements | architecture | build-plan | scaffold | impleme
 
 | Phase | Status | Required Human Approval | Required Artifacts | Blocking Issues | Next Action |
 | --- | --- | --- | --- | --- | --- |
-| Startup | pending | no | startup checklist | none | TBD |
-| Vision Interview | pending | yes | vision artifact, phase summary, phase gate | none | TBD |
-| Requirements | pending | yes | requirements artifact, phase summary, phase gate | none | TBD |
-| Tech Stack / Architecture | pending | yes | architecture artifact, environment setup, phase summary, phase gate | none | TBD |
-| Build Plan | pending | yes | build plan, phase summary, phase gate | none | TBD |
-| Scaffold | pending | yes | scaffold notes, phase summary, phase gate | none | TBD |
-| Implementation | pending | yes | implementation notes, tests or verification notes, phase summary, phase gate | none | TBD |
-| Testing / Verification | pending | yes | test results, UAT notes when needed, phase summary, phase gate | none | TBD |
-| Review | pending | yes | review approval, phase summary, phase gate | none | TBD |
-| Ship | pending | yes | shipping plan, human actions when needed, phase summary, phase gate | none | TBD |
-| Memory / Lessons Learned | pending | yes | memory packet, session summary when requested, phase gate | none | TBD |
+| Startup | pending | no | STARTUP-001, STATUS, project checklist | none | TBD |
+| Vision Interview | pending | yes | VISION-001, SUMMARY-001, GATE-001 | none | TBD |
+| Requirements | pending | yes | REQ-001, SUMMARY-001, GATE-001 | none | TBD |
+| Tech Stack / Architecture | pending | yes | ARCH-001, ENV-001, SUMMARY-001, GATE-001 | none | TBD |
+| Build Plan | pending | yes | PLAN-001, SUMMARY-001, GATE-001 | none | TBD |
+| Scaffold | pending | yes | SCAFFOLD-001, SUMMARY-001, GATE-001 | none | TBD |
+| Implementation | pending | yes | IMPL-001, SUMMARY-001, GATE-001 | none | TBD |
+| Testing / Verification | pending | yes | VERIFY-001, UAT-001 when human testing is needed, SUMMARY-001, GATE-001 | none | TBD |
+| Review | pending | yes | REVIEW-001, SUMMARY-001, GATE-001 | none | TBD |
+| Ship | pending | yes | SHIP-001, SUMMARY-001, GATE-001 | none | TBD |
+| Memory / Lessons Learned | pending | yes | MEMORY-001, SUMMARY-001, GATE-001 | none | TBD |
 
 ## Open Questions
 

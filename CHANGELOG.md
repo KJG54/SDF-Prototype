@@ -2,6 +2,11 @@
 
 ## 2026-06-17
 
+- Cleared stale active-project state from actory.config.json.
+- Added phases/00-startup.md to formalize startup before the Vision Interview.
+- Added named later-phase artifact templates for scaffold, implementation, verification, review, and shipping.
+- Aligned project checklist Markdown and JSON required artifacts for future command automation.
+- Updated the roadmap to reflect completed GitHub and scratchpad decisions.
 - Added repository-boundary guidance for publishing Software Factory without local projects or private memory.
 - Added `.env.example` and expanded `.gitignore` to protect local projects, vault data, secrets, dependencies, build outputs, and local databases.
 - Added project checklist templates for human progress tracking and future slash-command automation.

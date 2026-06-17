@@ -12,6 +12,11 @@ Use this file to track things that should be fixed in Software Factory or in pro
 
 ## Resolved
 
+- Cleared stale active-project state from actory.config.json.
+- Added a formal Startup phase doc.
+- Added named later-phase artifact templates for scaffold, implementation, verification, review, and ship.
+- Aligned project checklist Markdown and JSON required artifacts.
+- Updated the roadmap after GitHub publication and scratchpad decisions.
 - Added dedicated Phase 1 vision artifact templates.
 - Added Windows command guidance for `npm.cmd` when PowerShell blocks `npm.ps1`.
 - Added Git safe-directory guidance for sandbox-created repositories pushed by the human.
