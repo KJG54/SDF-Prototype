@@ -1,0 +1,35 @@
+{
+  "id": "AUDIT-001",
+  "type": "project_audit",
+  "status": "pending",
+  "audit_target": "",
+  "audit_status": "",
+  "current_phase": "",
+  "phase_gate_status": "",
+  "summary": "",
+  "findings": {
+    "high": [],
+    "medium": [],
+    "low": []
+  },
+  "required_artifacts_checked": [],
+  "markdown_json_alignment": "",
+  "open_questions": [],
+  "human_actions": [],
+  "blocking_issues_errors": [],
+  "deferred_issues": [],
+  "runtime_environment": "",
+  "dependency_locality": "",
+  "command_folder_check": {
+    "expected_folder": "",
+    "notes": ""
+  },
+  "git_github_readiness": "",
+  "testing_verification": "",
+  "shipping_readiness": "",
+  "memory_lessons": "",
+  "recommended_next_actions": [],
+  "human_decisions_needed": [],
+  "files_inspected": [],
+  "audit_limitations": []
+}

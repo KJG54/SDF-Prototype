@@ -1,0 +1,25 @@
+{
+  "id": "GATE-001",
+  "type": "phase_gate",
+  "phase": "",
+  "gate_status": "pending",
+  "required_artifacts_present": [],
+  "markdown_json_alignment_checked": false,
+  "errors_fixed": {
+    "no_unresolved_current_phase_errors_remain": false,
+    "notes": ""
+  },
+  "deferred_issues": [],
+  "human_actions": {
+    "required_actions_complete_or_deferred": false,
+    "notes": ""
+  },
+  "open_questions": {
+    "no_blocking_questions_remain": false,
+    "notes": ""
+  },
+  "human_verification": "",
+  "agent_recommendation": "",
+  "approval_question": "Are you satisfied with this phase and do you approve moving to the next phase?",
+  "human_approval": "pending"
+}

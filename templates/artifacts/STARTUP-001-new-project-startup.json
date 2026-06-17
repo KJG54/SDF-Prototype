@@ -1,0 +1,34 @@
+{
+  "id": "STARTUP-001",
+  "type": "new_project_startup",
+  "status": "pending",
+  "project_idea": "",
+  "who_it_is_for": "",
+  "purpose": "",
+  "project_context": "",
+  "human_experience_and_preferences": {
+    "technical_experience": "",
+    "explanation_level": "balanced",
+    "question_preference": "many"
+  },
+  "development_machine": {
+    "computer_operating_system": "",
+    "os_version": "",
+    "preferred_ide_editor": "",
+    "can_install_tools": ""
+  },
+  "target_platforms": [],
+  "dependency_tooling_preferences": {
+    "keep_dependencies_project_local_when_practical": true,
+    "docker_acceptable": "",
+    "conda_acceptable": "",
+    "python_virtual_environments_acceptable": "",
+    "dev_containers_acceptable": ""
+  },
+  "known_constraints": [],
+  "examples_inspiration": [],
+  "privacy_security_notes": [],
+  "early_risks_or_unknowns": [],
+  "agent_recommendation": "",
+  "ready_for_vision_interview": false
+}

@@ -1,0 +1,18 @@
+{
+  "id": "ACTION-001",
+  "type": "human_action",
+  "status": "pending",
+  "action_type": "required",
+  "what_to_do": "",
+  "why": "",
+  "who_does_this": "human",
+  "where_to_do_it": "",
+  "before_you_start": [],
+  "exact_steps": [],
+  "exact_commands": [],
+  "how_to_verify": "",
+  "if_something_goes_wrong": "",
+  "what_to_tell_agent": "",
+  "agent_can_do_later_with_approval": false,
+  "blocks_current_phase": true
+}

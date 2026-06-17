@@ -1,0 +1,12 @@
+{
+  "framework": "Software Factory",
+  "version": "0.1.0",
+  "active_project": "recipe-keeper",
+  "default_explanation_level": "balanced",
+  "default_model_policy": "balanced",
+  "default_ide": "Visual Studio Code",
+  "project_root": "projects",
+  "memory_vault": "memory/vault",
+  "human_approval_required_for_project_shaping_changes": true,
+  "automation_status": "documented-not-implemented"
+}

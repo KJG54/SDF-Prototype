@@ -1,0 +1,35 @@
+{
+  "id": "ENV-001",
+  "type": "environment_setup",
+  "status": "pending",
+  "summary": "",
+  "environment_strategy": "",
+  "dependency_locality": "project-local by default",
+  "development_machine": "",
+  "target_platforms": [],
+  "app_runtime": "",
+  "build_runtime": "",
+  "package_manager": "",
+  "dependency_isolation": "",
+  "local_services": [],
+  "why_this_strategy": "",
+  "required_system_tools": [],
+  "project_local_tools_dependencies": [],
+  "system_wide_tools_and_reasons": [],
+  "optional_tools": [],
+  "step_by_step_setup": [],
+  "verification_commands": [],
+  "beginner_notes": {
+    "folder_to_use": "",
+    "expected_result": "",
+    "what_to_tell_agent": ""
+  },
+  "agent_notes": "",
+  "human_notes": "",
+  "risks_tradeoffs": [],
+  "approval": {
+    "status": "pending",
+    "approved_by": null,
+    "approved_at": null
+  }
+}

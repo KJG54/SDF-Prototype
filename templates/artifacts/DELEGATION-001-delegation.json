@@ -1,0 +1,14 @@
+{
+  "id": "DELEGATION-001",
+  "type": "delegation",
+  "delegate": "Claude Code",
+  "goal": "",
+  "why_claude_is_useful_here": "",
+  "relevant_files_and_artifacts": [],
+  "constraints": [],
+  "acceptance_criteria": [],
+  "approval_boundaries": "",
+  "human_approval_needed_before_delegation": false,
+  "what_claude_must_not_change": [],
+  "expected_handoff_format": ""
+}

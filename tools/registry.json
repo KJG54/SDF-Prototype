@@ -1,0 +1,10 @@
+{
+  "tools": [],
+  "statuses": [
+    "known",
+    "preferred",
+    "approved",
+    "restricted",
+    "deprecated"
+  ]
+}

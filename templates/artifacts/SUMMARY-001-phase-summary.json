@@ -1,0 +1,25 @@
+{
+  "id": "SUMMARY-001",
+  "type": "phase_summary",
+  "phase": "",
+  "what_happened": "",
+  "plain_language_summary": "",
+  "decisions": [],
+  "artifacts_created_or_updated": [],
+  "open_questions": [],
+  "human_actions": [],
+  "beginner_safe_instructions_for_the_human": {
+    "exact_folder_app_window": "",
+    "exact_command_or_action": "",
+    "what_this_does": "",
+    "what_success_looks_like": "",
+    "what_to_tell_agent_afterward": ""
+  },
+  "risks_blockers": [],
+  "errors_resolved_this_phase": [],
+  "errors_or_issues_deferred": [],
+  "what_the_human_should_check": [],
+  "next_recommendation": "",
+  "approval_question": "Are you satisfied with this phase and do you approve moving to the next phase?",
+  "approval_status": ""
+}

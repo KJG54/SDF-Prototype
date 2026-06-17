@@ -1,0 +1,20 @@
+{
+  "id": "REQ-001",
+  "type": "requirements",
+  "status": "pending",
+  "summary": "",
+  "target_users": [],
+  "goals": [],
+  "must_have": [],
+  "nice_to_have": [],
+  "out_of_scope": [],
+  "constraints": [],
+  "assumptions": [],
+  "success_criteria": [],
+  "open_questions": [],
+  "approval": {
+    "status": "pending",
+    "approved_by": null,
+    "approved_at": null
+  }
+}

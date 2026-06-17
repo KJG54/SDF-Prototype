@@ -1,0 +1,111 @@
+{
+  "project_name": "",
+  "slug": "",
+  "purpose": "",
+  "current_phase": "startup",
+  "last_updated": "",
+  "phases": [
+    {
+      "id": "startup",
+      "name": "Startup",
+      "status": "pending",
+      "requires_human_approval": false,
+      "required_artifacts": ["STARTUP-001"],
+      "blocking_issues": [],
+      "next_action": ""
+    },
+    {
+      "id": "vision",
+      "name": "Vision Interview",
+      "status": "pending",
+      "requires_human_approval": true,
+      "required_artifacts": ["VISION-001", "SUMMARY-001", "GATE-001"],
+      "blocking_issues": [],
+      "next_action": ""
+    },
+    {
+      "id": "requirements",
+      "name": "Requirements",
+      "status": "pending",
+      "requires_human_approval": true,
+      "required_artifacts": ["REQ-001", "SUMMARY-001", "GATE-001"],
+      "blocking_issues": [],
+      "next_action": ""
+    },
+    {
+      "id": "architecture",
+      "name": "Tech Stack / Architecture",
+      "status": "pending",
+      "requires_human_approval": true,
+      "required_artifacts": ["ARCH-001", "ENV-001", "SUMMARY-001", "GATE-001"],
+      "blocking_issues": [],
+      "next_action": ""
+    },
+    {
+      "id": "build-plan",
+      "name": "Build Plan",
+      "status": "pending",
+      "requires_human_approval": true,
+      "required_artifacts": ["PLAN-001", "SUMMARY-001", "GATE-001"],
+      "blocking_issues": [],
+      "next_action": ""
+    },
+    {
+      "id": "scaffold",
+      "name": "Scaffold",
+      "status": "pending",
+      "requires_human_approval": true,
+      "required_artifacts": ["SUMMARY-001", "GATE-001"],
+      "blocking_issues": [],
+      "next_action": ""
+    },
+    {
+      "id": "implementation",
+      "name": "Implementation",
+      "status": "pending",
+      "requires_human_approval": true,
+      "required_artifacts": ["SUMMARY-001", "GATE-001"],
+      "blocking_issues": [],
+      "next_action": ""
+    },
+    {
+      "id": "testing-verification",
+      "name": "Testing / Verification",
+      "status": "pending",
+      "requires_human_approval": true,
+      "required_artifacts": ["UAT-001", "SUMMARY-001", "GATE-001"],
+      "blocking_issues": [],
+      "next_action": ""
+    },
+    {
+      "id": "review",
+      "name": "Review",
+      "status": "pending",
+      "requires_human_approval": true,
+      "required_artifacts": ["SUMMARY-001", "GATE-001"],
+      "blocking_issues": [],
+      "next_action": ""
+    },
+    {
+      "id": "ship",
+      "name": "Ship",
+      "status": "pending",
+      "requires_human_approval": true,
+      "required_artifacts": ["SUMMARY-001", "GATE-001"],
+      "blocking_issues": [],
+      "next_action": ""
+    },
+    {
+      "id": "memory-lessons",
+      "name": "Memory / Lessons Learned",
+      "status": "pending",
+      "requires_human_approval": true,
+      "required_artifacts": ["MEMORY-001", "SUMMARY-001", "GATE-001"],
+      "blocking_issues": [],
+      "next_action": ""
+    }
+  ],
+  "open_questions": [],
+  "human_actions": [],
+  "deferred_items": []
+}

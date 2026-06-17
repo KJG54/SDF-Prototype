@@ -1,0 +1,38 @@
+{
+  "id": "VISION-001",
+  "type": "vision",
+  "status": "pending",
+  "project_name": "",
+  "one_sentence_idea": "",
+  "purpose": "",
+  "target_users": [],
+  "what_the_human_wants_it_to_do": [],
+  "why_this_matters": "",
+  "development_machine": {
+    "computer_operating_system": "",
+    "os_version": "",
+    "preferred_ide_editor": "",
+    "admin_install_permissions": ""
+  },
+  "target_platforms": [],
+  "experience_level_and_guidance_preference": {
+    "technical_experience": "",
+    "explanation_level": "balanced",
+    "question_preference": "many"
+  },
+  "base_v1_option": "",
+  "strong_v1_option": "",
+  "future_later_options": [],
+  "user_requested_scope": [],
+  "agent_suggested_options": [],
+  "constraints": [],
+  "risks_vague_areas": [],
+  "useful_existing_tools_to_consider": [],
+  "open_questions": [],
+  "selected_direction": "",
+  "approval": {
+    "status": "pending",
+    "approved_by": null,
+    "approved_at": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "project_name": "",
+  "slug": "",
+  "state": "active",
+  "current_phase": "",
+  "summary": "",
+  "latest_decision": "",
+  "open_questions": [],
+  "next_step": "",
+  "current_phase_gate": "pending",
+  "blocking_issues": [],
+  "checklist_files": {
+    "human": "PROJECT-CHECKLIST.md",
+    "machine": "project-checklist.json"
+  }
+}

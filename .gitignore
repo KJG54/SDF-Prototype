@@ -1,0 +1,38 @@
+# Local/private framework state
+/projects/
+/memory/vault/
+
+# Local project outputs if a project is intentionally unignored later
+/projects/*/workspace/node_modules/
+/projects/*/workspace/.env
+/projects/*/workspace/.env.*
+/projects/*/workspace/dist/
+/projects/*/workspace/build/
+/projects/*/workspace/.next/
+/projects/*/workspace/.venv/
+/projects/*/workspace/.conda/
+/projects/*/workspace/__pycache__/
+/projects/*/workspace/*.db
+/projects/*/workspace/*.sqlite
+/projects/*/workspace/*.sqlite3
+
+# Local scratchpads
+FRAMEWORK-IDEAS.md
+PROJECT-IDEAS.md
+
+# Common local files
+.env
+.env.*
+!.env.example
+.venv/
+.conda/
+node_modules/
+dist/
+build/
+.next/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.DS_Store
+Thumbs.db

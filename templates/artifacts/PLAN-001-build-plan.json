@@ -1,0 +1,31 @@
+{
+  "id": "PLAN-001",
+  "type": "build_plan",
+  "status": "pending",
+  "summary": "",
+  "runtime_environment_prerequisites": [],
+  "phase_gate_expectations": [
+    "Each task must leave the current phase closer to passing its gate.",
+    "Blocking errors must be fixed before phase advancement unless explicitly deferred.",
+    "Human actions must include exact folders, exact commands, verification steps, and what to report back."
+  ],
+  "tasks": [
+    {
+      "id": "TASK-001",
+      "goal": "",
+      "likely_files_or_areas": [],
+      "prerequisites": [],
+      "acceptance_criteria": [],
+      "risk_level": "low",
+      "claude_delegate_candidate": false,
+      "expected_verification": [],
+      "human_approval_before": false,
+      "human_approval_after": false
+    }
+  ],
+  "approval": {
+    "status": "pending",
+    "approved_by": null,
+    "approved_at": null
+  }
+}

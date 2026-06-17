@@ -1,0 +1,22 @@
+{
+  "id": "UAT-001",
+  "type": "user_acceptance_testing",
+  "status": "pending",
+  "project": "",
+  "workflow_tested": "",
+  "tester": "",
+  "test_environment": {
+    "device_os": "",
+    "browser_runtime_app_version": ""
+  },
+  "steps_given_to_human": [],
+  "expected_result": "",
+  "actual_result": "",
+  "result": "",
+  "human_satisfaction_notes": "",
+  "issues_found": [],
+  "must_fix_before_review": [],
+  "acceptable_to_defer": [],
+  "retest_notes": "",
+  "approval": "pending"
+}

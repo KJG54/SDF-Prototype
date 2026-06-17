@@ -1,0 +1,30 @@
+{
+  "id": "ARCH-001",
+  "type": "architecture",
+  "status": "pending",
+  "recommendation": "",
+  "selected_stack": [],
+  "development_machine": "",
+  "target_platforms": [],
+  "app_runtime": "",
+  "build_runtime": "",
+  "package_manager_lockfile": "",
+  "dependency_isolation_strategy": "",
+  "local_services": [],
+  "system_wide_tools": [],
+  "alternatives_considered": [],
+  "rationale": "",
+  "structure_overview": "",
+  "components": [],
+  "data_storage": "",
+  "integrations": [],
+  "security_privacy": "",
+  "cost_notes": "",
+  "deployment_shipping_target": "",
+  "risks_tradeoffs": [],
+  "approval": {
+    "status": "pending",
+    "approved_by": null,
+    "approved_at": null
+  }
+}
