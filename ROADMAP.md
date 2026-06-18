@@ -15,9 +15,9 @@
 
 ## Next Recommended Work
 
-1. Enable the tracked pre-commit hook locally with `git config core.hooksPath .githooks`.
-2. Verify dependency reproducibility for generated projects.
-3. Add Rust/Tauri dependency audit guidance for desktop apps.
+1. Add Rust/Tauri dependency audit guidance for desktop apps.
+2. Decide whether to run `cargo audit` locally for Recipe Keeper or record it as a human action.
+3. Clean up legacy Recipe Keeper wrapper artifact-validation warnings.
 4. Test the tightened process with another small project.
 
 ## Recently Completed
@@ -29,6 +29,7 @@
 - Confirmed current Codex does not expose these as actual project-local slash commands.
 - Tightened credential guidance and Review/Gate security checks after external review.
 - Added lightweight artifact validation and wired it into the tracked pre-commit hook.
+- Verified Recipe Keeper dependency reproducibility with a project-local npm cache, clean npm install, locked Cargo metadata, locked Cargo check, and debug desktop build.
 
 ## Later
 
