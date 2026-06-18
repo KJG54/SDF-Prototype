@@ -41,8 +41,10 @@ Recommended local setup:
 - Git for source control.
 - A terminal the user is comfortable with.
 - Provider-specific API keys only when a project or future automation actually needs them.
+- GitHub authentication through `gh auth login` or Git Credential Manager, not long-lived tokens in `.env`.
+- Optional pre-commit secret scanning with `tools/secret-scan.ps1`.
 
-Copy [.env.example](.env.example) to `.env` for local settings. Never commit `.env`.
+Copy [.env.example](.env.example) to `.env` for local non-secret settings. Never commit `.env`, and do not store long-lived GitHub tokens there.
 
 Agents must create a human-action file when the user needs to install a tool, add a key, run a terminal command, or do anything technical outside normal conversation.
 

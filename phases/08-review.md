@@ -8,6 +8,7 @@ Confirm the project is what the human meant to build and is ready to ship.
 
 - Compare result against requirements.
 - Check UX, docs, known issues, and deferred ideas.
+- Check security, privacy, credential handling, dependency risk, and deployment surfaces when relevant.
 - Recommend ship, revise, or pause.
 - Ask whether the project feels like what the human meant to build.
 - Surface honest concerns about scope gaps, quality, risk, or shipping readiness.
@@ -32,6 +33,7 @@ Confirm the project is what the human meant to build and is ready to ship.
 - Is anything important missing from V1?
 - Is anything included that should be removed or simplified?
 - Are the known issues acceptable for this version?
+- Are there security, privacy, credential, dependency, or deployment risks that must be fixed before shipping?
 - Should we ship, revise, pause, or continue polishing?
 - What shipping path do you prefer next?
 

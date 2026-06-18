@@ -21,6 +21,10 @@ pending | passed | blocked | deferred-with-approval
 
 - [ ] No unresolved current-phase errors remain
 
+## Security / Privacy Check
+
+- [ ] Security, privacy, credential, dependency, and deployment risks were checked or marked not relevant
+
 ## Deferred Issues
 
 - Issue: TBD

@@ -6,10 +6,40 @@ Before shipping:
 
 - ensure `.gitignore` is appropriate
 - avoid secrets
+- prefer `gh auth login` or Git Credential Manager over tokens in `.env`
+- run a secret scan or manual token-pattern check before pushing
 - include README and setup instructions
 - document known issues
 - confirm license only when needed
 - ask approval before creating, pushing, or publishing a repository
+
+## Credential Handling
+
+GitHub credentials should usually be handled by:
+
+- `gh auth login`;
+- Git Credential Manager;
+- a short-lived, least-privilege token set only for the current shell session when no safer option works.
+
+Do not ask a nontechnical user to keep a long-lived GitHub token in `.env`.
+
+If a token is exposed to an agent, terminal log, review output, or pasted text, treat it as compromised and create a human action to rotate it.
+
+## Secret Scan Guard
+
+Before committing or pushing framework changes, run:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File tools/secret-scan.ps1 -All
+```
+
+To enable the tracked pre-commit hook for this repo:
+
+```powershell
+git config core.hooksPath .githooks
+```
+
+The hook scans staged files and reports file names, line numbers, and pattern names without printing secret values.
 
 ## Repository Location
 

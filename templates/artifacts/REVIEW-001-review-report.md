@@ -20,6 +20,15 @@ TBD
 
 - TBD
 
+## Security / Privacy Review
+
+- Credential handling checked: yes | no | not relevant
+- Secrets or tokens found in tracked files: yes | no | not checked
+- Dependency risk checked: yes | no | not relevant
+- Deployment surface checked: yes | no | not relevant
+- Browser/webview surfaces checked: yes | no | not relevant
+- Notes: TBD
+
 ## Deferred Ideas
 
 - TBD

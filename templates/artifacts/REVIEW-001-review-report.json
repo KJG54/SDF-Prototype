@@ -6,6 +6,14 @@
   "what_works_well": [],
   "gaps_or_concerns": [],
   "known_issues": [],
+  "security_privacy_review": {
+    "credential_handling_checked": "not_checked",
+    "secrets_or_tokens_found_in_tracked_files": "not_checked",
+    "dependency_risk_checked": "not_checked",
+    "deployment_surface_checked": "not_checked",
+    "browser_webview_surfaces_checked": "not_checked",
+    "notes": ""
+  },
   "deferred_ideas": [],
   "recommendation": "",
   "human_decision": ""

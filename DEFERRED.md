@@ -7,14 +7,19 @@ Use this file for known useful work that should not be implemented in v1 without
 - `factory` CLI implementation
 - Native Codex command registration
 - Artifact validation tooling
+- Full phase-gate enforcement tooling
 - Chroma or equivalent memory index
 - Automated audit commands
+- Dependency reproducibility checks for generated projects
+- Rust/Tauri supply-chain audit guidance
 - Automated model routing
 - GUI for nontechnical users
 - GitHub repo creation and push automation
 - Dedicated success-definition artifact
 - Formal effort, token, and cost estimates in build plans
 - Reusable code templates for specific stacks
+- Tool registry population and lifecycle policy
+- Generated-project nested-repository migration strategy
 - Advanced project backlog system
 - Installer packaging playbooks for desktop apps
 

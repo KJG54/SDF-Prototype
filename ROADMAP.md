@@ -15,9 +15,10 @@
 
 ## Next Recommended Work
 
-1. Test the tightened process with another small project.
-2. Test the workflow prompts by typing plain-language invocations in Codex.
-3. Explore native Codex command registration only if Codex exposes a supported project-local mechanism.
+1. Rotate the exposed local GitHub token and move GitHub auth to `gh auth login`.
+2. Add a lightweight secret-scanning/pre-commit guard before any more GitHub automation.
+3. Fix or document the Recipe Keeper example security issues found during review.
+4. Test the tightened process with another small project.
 
 ## Recently Completed
 
@@ -26,6 +27,7 @@
 - Added manual Markdown/JSON artifact validation guidance.
 - Chose plain-language Codex workflow prompts as the primary command direction.
 - Confirmed current Codex does not expose these as actual project-local slash commands.
+- Tightened credential guidance and Review/Gate security checks after external review.
 
 ## Later
 
@@ -33,6 +35,7 @@
 - `factory` CLI if a terminal workflow becomes useful later
 - Automatic checklist updates after each phase command
 - Artifact validation
+- Automated secret scanning and pre-commit guards
 - Chroma or equivalent memory indexing
 - Tool registry checks
 - Project audit command

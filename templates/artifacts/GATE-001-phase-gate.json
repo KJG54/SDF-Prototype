@@ -9,6 +9,10 @@
     "no_unresolved_current_phase_errors_remain": false,
     "notes": ""
   },
+  "security_privacy_check": {
+    "checked_or_not_relevant": false,
+    "notes": ""
+  },
   "deferred_issues": [],
   "human_actions": {
     "required_actions_complete_or_deferred": false,
