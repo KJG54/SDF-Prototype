@@ -9,7 +9,7 @@ The goal is to catch drift between human-readable Markdown and agent-readable JS
 Validate paired artifacts:
 
 - before a phase gate passes;
-- during `/project-status` when status or checklist claims look stale;
+- during `run project status` when status or checklist claims look stale;
 - during `/audit project`;
 - after editing only one side of a Markdown/JSON pair;
 - before shipping, publishing, or handing off a project.

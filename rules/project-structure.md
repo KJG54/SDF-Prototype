@@ -47,4 +47,4 @@ Every project must maintain both:
 
 The checklist must be updated when a phase starts, when a blocking issue appears, when a human action is created, when a phase gate passes, and when work is deferred with approval.
 
-Slash commands must treat the checklist as project state, not as a substitute for the actual phase artifacts.
+Codex workflow prompts and future commands must treat the checklist as project state, not as a substitute for the actual phase artifacts.

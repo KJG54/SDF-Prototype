@@ -9,26 +9,27 @@
 - Project workspace structure
 - Memory vault structure
 - Manual session summaries
-- Manual Codex workflow command documentation
+- Manual Codex workflow prompt documentation
 - Project checklist templates for future command automation
 - Framework GitHub publishing with local projects and private memory excluded
 
 ## Next Recommended Work
 
 1. Test the tightened process with another small project.
-2. Run a first manual `/project-status` simulation.
-3. Explore native Codex-style command automation after another dry run.
+2. Test the workflow prompts by typing plain-language invocations in Codex.
+3. Explore native Codex command registration only if Codex exposes a supported project-local mechanism.
 
 ## Recently Completed
 
-- Designed Codex command contracts for `/start`, `/project-status`, `/gate`, `/audit`, `/wrap-up`, and one command per phase.
+- Designed Codex workflow prompt contracts for startup, project status, gate, audit, wrap-up, and one workflow per phase.
 - Defined minimum checklist state transitions for future command automation.
 - Added manual Markdown/JSON artifact validation guidance.
-- Chose Codex-style workflow commands as the primary command direction.
+- Chose plain-language Codex workflow prompts as the primary command direction.
+- Confirmed current Codex does not expose these as actual project-local slash commands.
 
 ## Later
 
-- Native Codex-style command automation
+- Native Codex command registration when supported
 - `factory` CLI if a terminal workflow becomes useful later
 - Automatic checklist updates after each phase command
 - Artifact validation

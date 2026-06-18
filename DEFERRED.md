@@ -5,7 +5,7 @@ Use this file for known useful work that should not be implemented in v1 without
 ## Deferred Items
 
 - `factory` CLI implementation
-- Slash command automation
+- Native Codex command registration
 - Artifact validation tooling
 - Chroma or equivalent memory index
 - Automated audit commands

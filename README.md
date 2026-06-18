@@ -12,7 +12,7 @@ The framework is designed around a simple belief: agents should make technical w
 - Approval gates so agents do not silently change the direction of a project.
 - Local project folders that stay separate from the framework itself.
 - A memory vault for session summaries, lessons learned, reusable patterns, and known problems.
-- Planned Codex-style workflow commands that can later run the same process more quickly.
+- Planned Codex workflow prompts that can later become native commands when Codex supports project-local command registration.
 
 ## Start Here
 
@@ -94,19 +94,19 @@ The framework repository should not contain local project work or private memory
 
 If a user wants to publish an example project or sanitized memory note, copy it into a dedicated public examples or docs folder instead of committing the live local folder.
 
-## Planned Codex Commands
+## Codex Workflow Prompts
 
-The command system is documented now for use directly in Codex conversation and can be automated later. See [commands/README.md](commands/README.md).
+The workflow prompt system is documented now for use directly in Codex conversation and can be automated later. These do not currently appear as built-in Codex slash commands. See [commands/README.md](commands/README.md).
 
-Key commands:
+Use these phrases in Codex:
 
-- `/start`: start a new project and create the startup checklist.
-- `/vision`: interview the user about what they want to build.
-- `/architecture`: choose stack, runtime, dependency, and environment strategy.
-- `/gate`: confirm the current phase is complete before moving on.
-- `/project-status`: summarize project state from the checklist and artifacts.
-- `/memory`: record lessons learned and reusable patterns after the project is done.
-- `/wrap-up`: create a session summary.
+- `start a new project`: create or continue startup.
+- `run vision`: interview the user about what they want to build.
+- `run architecture`: choose stack, runtime, dependency, and environment strategy.
+- `run gate`: confirm the current phase is complete before moving on.
+- `run project status`: summarize project state from the checklist and artifacts.
+- `run memory`: record lessons learned and reusable patterns after the project is done.
+- `wrap up`: create a session summary.
 
 ## Useful Standards
 

@@ -1,14 +1,14 @@
-# Codex Command Contracts
+# Codex Workflow Prompt Contracts
 
-These contracts define how Codex-facing workflow commands should behave. They are documentation for v1, not implemented automation.
+These contracts define how Codex-facing workflow prompts should behave. They are documentation for v1, not implemented automation.
 
-The primary interface is conversation with Codex. Slash-style names are stable shorthand for intent, but the human may also ask in plain language, such as "run project status." A separate `factory` CLI is a later option, not the default direction.
+The primary interface is conversation with Codex. Plain-language phrases such as "run project status" are the working interface today. Slash-style names are reserved command names for future native command support, but they are not currently registered with Codex and will not appear in the Codex command picker. A separate `factory` CLI is a later option, not the default direction.
 
-Commands must help the human move through the Software Factory process without bypassing approval gates. When a command cannot prove that required state is safe, it should fail closed and explain what is missing.
+Workflow prompts must help the human move through the Software Factory process without bypassing approval gates. When a prompt cannot prove that required state is safe, it should fail closed and explain what is missing.
 
 ## Shared Contract
 
-Every command should:
+Every workflow prompt should:
 
 - Read `factory.config.json` first.
 - For project commands, read the active project's `STATUS.md`, `status.json`, `PROJECT-CHECKLIST.md`, and `project-checklist.json`.
@@ -20,7 +20,7 @@ Every command should:
 - Refuse to advance phases while blocking issues, unresolved errors, required human actions, or required approvals are missing.
 - Ask before changing scope, architecture, dependencies, paid services, cloud resources, deployment, publication, secrets handling, or phase.
 
-Commands must not:
+Workflow prompts must not:
 
 - Create generated source code outside `projects/<slug>/workspace/`.
 - Treat documentation-only notes as approved scope.
@@ -35,7 +35,7 @@ Supported phase status values:
 - `pending`: the phase has not started.
 - `in-progress`: the phase has started and required work is underway.
 - `blocked`: the phase cannot continue until a blocker, human action, or unresolved error is handled.
-- `ready-for-gate`: required work appears complete and the command should run `/gate`.
+- `ready-for-gate`: required work appears complete and the agent should run the gate workflow.
 - `approved`: the human approved the phase gate.
 - `deferred`: the human explicitly approved postponing this phase or its remaining work.
 
@@ -53,7 +53,7 @@ Minimum checklist fields to update:
 
 ## State Transitions
 
-When a phase command starts:
+When a phase workflow starts:
 
 - Set `current_phase` to that phase id.
 - Set the phase status to `in-progress`.
@@ -92,7 +92,11 @@ When `/gate` passes:
 
 ## Command Details
 
-### `/start`
+### Start
+
+Invocation: `start a new project`
+
+Reserved command name: `/start`
 
 Purpose: create or continue startup for a new project.
 
@@ -120,23 +124,23 @@ Writes:
 Gate behavior:
 
 - Startup does not require the same project-shaping approval as later phases.
-- The command should still ask whether the human wants to continue to Phase 1.
+- The workflow should still ask whether the human wants to continue to Phase 1.
 
-### Phase Commands
+### Phase Workflows
 
 Applies to:
 
-- `/vision`
-- `/requirements`
-- `/architecture`
-- `/plan`
-- `/scaffold`
-- `/build`
-- `/test`
-- `/uat`
-- `/review`
-- `/ship`
-- `/memory`
+- `run vision`
+- `run requirements`
+- `run architecture`
+- `run plan`
+- `run scaffold`
+- `run build`
+- `run test`
+- `run uat`
+- `run review`
+- `run ship`
+- `run memory`
 
 Reads:
 
@@ -156,11 +160,15 @@ Writes:
 
 Gate behavior:
 
-- A phase command may prepare a phase for `/gate`.
-- A phase command must not approve itself.
-- A phase command must ask the human for approval before moving forward.
+- A phase workflow may prepare a phase for the gate workflow.
+- A phase workflow must not approve itself.
+- A phase workflow must ask the human for approval before moving forward.
 
-### `/project-status`
+### Project Status
+
+Invocation: `run project status`
+
+Reserved command name: `/project-status`
 
 Purpose: summarize current project state.
 
@@ -187,7 +195,11 @@ Required checks:
 - Paired artifacts are checked with `standards/artifact-validation.md` when status depends on them.
 - Blocking issues, open questions, human actions, and deferred items are surfaced.
 
-### `/gate`
+### Gate
+
+Invocation: `run gate`
+
+Reserved command name: `/gate`
 
 Purpose: determine whether the current phase can close.
 
@@ -222,7 +234,11 @@ Failure behavior:
 - Set or keep the phase status as `blocked` when the issue prevents progress.
 - Recommend the next smallest corrective action.
 
-### `/audit framework`
+### Audit Framework
+
+Invocation: `audit framework`
+
+Reserved command name: `/audit framework`
 
 Purpose: inspect Software Factory itself.
 
@@ -246,7 +262,11 @@ Must not:
 - Rewrite framework policy automatically.
 - Implement deferred automation without approval.
 
-### `/audit project`
+### Audit Project
+
+Invocation: `audit project`
+
+Reserved command name: `/audit project`
 
 Purpose: inspect an active project against the framework.
 
@@ -264,7 +284,11 @@ Writes:
 - `AUDIT-001-project-audit.json`
 - Checklist updates only if the audit creates a blocker or human action
 
-### `/wrap-up`
+### Wrap Up
+
+Invocation: `wrap up`
+
+Reserved command name: `/wrap-up`
 
 Purpose: capture the session state for a future human or agent.
 

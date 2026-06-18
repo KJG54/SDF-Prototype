@@ -8,6 +8,7 @@
 - Added a non-secret `GITHUB_TOKEN` placeholder to `.env.example`.
 - Added manual artifact validation guidance for paired Markdown/JSON records.
 - Renamed the project state command from `/status` to `/project-status` to avoid Codex command ambiguity.
+- Clarified that Software Factory workflows are plain-language Codex prompts today, not registered slash commands.
 
 ## 2026-06-17
 
