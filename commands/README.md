@@ -2,6 +2,10 @@
 
 Commands are documented for v1 and may be automated later through the `factory` CLI or slash commands.
 
+See [contracts.md](contracts.md) for the command behavior, checklist state transitions, and fail-closed rules future automation should follow.
+
+Use [../standards/artifact-validation.md](../standards/artifact-validation.md) for manual Markdown/JSON pair checks until validation is automated.
+
 ## Commands
 
 - `/start`: create or continue the new-project startup checklist

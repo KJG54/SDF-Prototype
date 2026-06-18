@@ -15,6 +15,7 @@ pending | passed | blocked | deferred-with-approval
 ## Markdown / JSON Alignment Checked
 
 - [ ] Yes
+- Standard used: `standards/artifact-validation.md`
 
 ## Errors Fixed
 

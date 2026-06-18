@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-06-18
+
+- Added command contracts for future slash-command or `factory` CLI automation.
+- Defined minimum checklist state transitions for phase commands and gates.
+- Linked command contracts from the command README.
+- Added a non-secret `GITHUB_TOKEN` placeholder to `.env.example`.
+- Added manual artifact validation guidance for paired Markdown/JSON records.
+
 ## 2026-06-17
 
 - Cleared stale active-project state from actory.config.json.

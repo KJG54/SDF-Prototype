@@ -20,7 +20,7 @@ Run or recommend a project audit:
 
 - Current phase and phase gate status.
 - Required artifacts for the current phase.
-- Paired Markdown/JSON artifact alignment.
+- Paired Markdown/JSON artifact alignment using `standards/artifact-validation.md`.
 - Open questions.
 - Required human actions.
 - Blocking issues and unresolved errors.

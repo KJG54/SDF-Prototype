@@ -15,10 +15,15 @@
 
 ## Next Recommended Work
 
-1. Design command contracts for `/start`, `/status`, `/gate`, and one command per phase.
-2. Define the minimum checklist state transitions each command must perform.
-3. Add lightweight manual validation guidance for artifact pairs before automating validation.
-4. Test the tightened process with another small project.
+1. Test the tightened process with another small project.
+2. Decide whether command contracts are detailed enough to support a first manual `/status` simulation.
+3. Explore the smallest useful `factory` CLI or slash-command prototype only after another dry run.
+
+## Recently Completed
+
+- Designed command contracts for `/start`, `/status`, `/gate`, `/audit`, `/wrap-up`, and one command per phase.
+- Defined minimum checklist state transitions for future command automation.
+- Added manual Markdown/JSON artifact validation guidance.
 
 ## Later
 
