@@ -12,6 +12,7 @@
 - Tightened credential guidance away from long-lived GitHub tokens in `.env`.
 - Added security/privacy checks to Review and Gate templates.
 - Added a lightweight PowerShell secret scanner and tracked pre-commit hook template.
+- Added a lightweight PowerShell artifact validator and wired it into the tracked pre-commit hook.
 
 ## 2026-06-17
 

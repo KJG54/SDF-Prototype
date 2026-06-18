@@ -8,9 +8,7 @@ Use this file to track things that should be fixed in Software Factory or in pro
 
 ## AI Findings
 
-- Consider adding automated checks later to enforce phase gates, paired JSON/Markdown artifact alignment, and unresolved-error blocking.
-- Add a lightweight secret-scanning/pre-commit guard before any more GitHub automation.
-- Fix or document Recipe Keeper example security findings: disabled Tauri CSP, unsafe URL scheme rendering, and missing security review artifact coverage.
+- Add deeper semantic checks later to enforce phase gates and unresolved-error blocking.
 - Document the generated-project nested repository pattern more explicitly, or decide whether generated workspaces should live outside the framework folder.
 - Verify dependency reproducibility for generated projects, including package-manager lockfiles and build-tool version ranges.
 - Add Rust/Tauri audit guidance, such as when to run `cargo audit`, for desktop apps.
@@ -54,4 +52,5 @@ Use this file to track things that should be fixed in Software Factory or in pro
 - Workspace folder vs project wrapper folder needed stronger guidance. Status: resolved in Git/GitHub standard and Windows local development standard.
 - The first dry run exposed that automated artifact validation will eventually be valuable. Status: deferred.
 - External review found that documented safety gates are still advisory until enforcement tooling exists. Status: deferred for automation, partially mitigated by clearer docs and stronger templates.
-- External review found that the Recipe Keeper example skipped security review details. Status: in progress.
+- External review found that the Recipe Keeper example skipped security review details. Status: resolved with review template updates and Recipe Keeper review artifact notes.
+- External review found that paired artifact validation was manual only. Status: partially resolved with `tools/artifact-validate.ps1`; deeper semantic checks remain deferred.

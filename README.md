@@ -43,6 +43,7 @@ Recommended local setup:
 - Provider-specific API keys only when a project or future automation actually needs them.
 - GitHub authentication through `gh auth login` or Git Credential Manager, not long-lived tokens in `.env`.
 - Optional pre-commit secret scanning with `tools/secret-scan.ps1`.
+- Optional artifact validation with `tools/artifact-validate.ps1`.
 
 Copy [.env.example](.env.example) to `.env` for local non-secret settings. Never commit `.env`, and do not store long-lived GitHub tokens there.
 
@@ -109,6 +110,21 @@ Use these phrases in Codex:
 - `run project status`: summarize project state from the checklist and artifacts.
 - `run memory`: record lessons learned and reusable patterns after the project is done.
 - `wrap up`: create a session summary.
+
+## Local Validation
+
+Before committing framework changes, agents should run:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File tools/secret-scan.ps1 -All
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File tools/artifact-validate.ps1 -All
+```
+
+To enable the tracked pre-commit hook for this repo:
+
+```powershell
+git config core.hooksPath .githooks
+```
 
 ## Useful Standards
 

@@ -31,6 +31,7 @@ Before committing or pushing framework changes, run:
 
 ```powershell
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File tools/secret-scan.ps1 -All
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File tools/artifact-validate.ps1 -All
 ```
 
 To enable the tracked pre-commit hook for this repo:
@@ -39,7 +40,7 @@ To enable the tracked pre-commit hook for this repo:
 git config core.hooksPath .githooks
 ```
 
-The hook scans staged files and reports file names, line numbers, and pattern names without printing secret values.
+The hook scans staged files for secret patterns and validates staged artifact pairs without printing secret values.
 
 ## Repository Location
 

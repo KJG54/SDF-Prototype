@@ -15,7 +15,7 @@ Every workflow prompt should:
 - Treat `project-checklist.json` as the agent-readable state record.
 - Treat `PROJECT-CHECKLIST.md` as the human-facing progress record.
 - Keep paired Markdown and JSON artifacts aligned.
-- Use `standards/artifact-validation.md` for manual paired-artifact checks until automation exists.
+- Use `tools/artifact-validate.ps1` and `standards/artifact-validation.md` for paired-artifact checks.
 - Record human actions when the human must install, authenticate, run commands, provide credentials, test manually, or make an external decision.
 - Refuse to advance phases while blocking issues, unresolved errors, required human actions, or required approvals are missing.
 - Ask before changing scope, architecture, dependencies, paid services, cloud resources, deployment, publication, secrets handling, or phase.
@@ -65,7 +65,7 @@ When a required artifact is created:
 
 - Add the artifact id to the phase record if it is missing.
 - Make sure the Markdown and JSON versions describe the same decision, status, and open issues.
-- Validate the pair using `standards/artifact-validation.md` when the artifact affects phase gates, status, or handoff.
+- Validate the pair using `tools/artifact-validate.ps1` and `standards/artifact-validation.md` when the artifact affects phase gates, status, or handoff.
 - Update `last_updated`.
 
 When a blocker is found:
@@ -192,7 +192,7 @@ Required checks:
 - Markdown and JSON status agree.
 - Checklist phase matches status phase.
 - Current phase artifacts exist or are reported missing.
-- Paired artifacts are checked with `standards/artifact-validation.md` when status depends on them.
+- Paired artifacts are checked with `tools/artifact-validate.ps1` and `standards/artifact-validation.md` when status depends on them.
 - Blocking issues, open questions, human actions, and deferred items are surfaced.
 
 ### Gate

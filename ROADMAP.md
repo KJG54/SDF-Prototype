@@ -15,9 +15,9 @@
 
 ## Next Recommended Work
 
-1. Rotate the exposed local GitHub token and move GitHub auth to `gh auth login`.
-2. Add a lightweight secret-scanning/pre-commit guard before any more GitHub automation.
-3. Fix or document the Recipe Keeper example security issues found during review.
+1. Enable the tracked pre-commit hook locally with `git config core.hooksPath .githooks`.
+2. Verify dependency reproducibility for generated projects.
+3. Add Rust/Tauri dependency audit guidance for desktop apps.
 4. Test the tightened process with another small project.
 
 ## Recently Completed
@@ -28,14 +28,15 @@
 - Chose plain-language Codex workflow prompts as the primary command direction.
 - Confirmed current Codex does not expose these as actual project-local slash commands.
 - Tightened credential guidance and Review/Gate security checks after external review.
+- Added lightweight artifact validation and wired it into the tracked pre-commit hook.
 
 ## Later
 
 - Native Codex command registration when supported
 - `factory` CLI if a terminal workflow becomes useful later
 - Automatic checklist updates after each phase command
-- Artifact validation
-- Automated secret scanning and pre-commit guards
+- Deeper semantic artifact validation
+- Full phase-gate enforcement
 - Chroma or equivalent memory indexing
 - Tool registry checks
 - Project audit command

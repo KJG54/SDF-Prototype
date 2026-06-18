@@ -1,6 +1,6 @@
 # Artifact Validation Standard
 
-Use this for manual artifact checks until automated validation exists.
+Use this for artifact checks. `tools/artifact-validate.ps1` automates the lightweight structural checks; this standard remains the source for human review of meaning and project-shaping decisions.
 
 The goal is to catch drift between human-readable Markdown and agent-readable JSON without turning every check into a full audit.
 
@@ -13,6 +13,14 @@ Validate paired artifacts:
 - during `/audit project`;
 - after editing only one side of a Markdown/JSON pair;
 - before shipping, publishing, or handing off a project.
+
+Run the automated check with:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File tools/artifact-validate.ps1 -All
+```
+
+The tracked pre-commit hook runs the same validator against staged artifact files.
 
 ## What Counts As A Pair
 
