@@ -1,6 +1,6 @@
-# Planned Commands
+# Planned Codex Commands
 
-Commands are documented for v1 and may be automated later through the `factory` CLI or slash commands.
+Commands are documented for v1 as Codex-facing workflow prompts. They may be automated later through native Codex-style commands. A separate `factory` CLI can stay a later option if it proves useful.
 
 See [contracts.md](contracts.md) for the command behavior, checklist state transitions, and fail-closed rules future automation should follow.
 
@@ -21,7 +21,7 @@ Use [../standards/artifact-validation.md](../standards/artifact-validation.md) f
 - `/ship`: package or publish the project
 - `/memory`: record lessons learned, reusable patterns, known problems, and the final memory packet
 - `/gate`: check whether the current phase is ready to close
-- `/status`: summarize current project state
+- `/project-status`: summarize current project state
 - `/audit framework`: inspect Software Factory health
 - `/audit project`: inspect active project health and produce `AUDIT-001`
 - `/wrap-up`: create a session summary
@@ -41,6 +41,6 @@ Each project should have:
 
 Every phase command should update the checklist when it starts, when it creates required artifacts, when it records a human action, when it discovers a blocker, and when the phase gate closes.
 
-`/status` should read the checklist first, then verify important claims against the actual artifacts.
+`/project-status` should read the checklist first, then verify important claims against the actual artifacts.
 
 `/gate` should fail closed when the checklist says a phase is incomplete, a required artifact is missing, a blocker is unresolved, or human approval has not been recorded.

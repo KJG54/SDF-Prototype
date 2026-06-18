@@ -1,6 +1,8 @@
-# Command Contracts
+# Codex Command Contracts
 
-These contracts define how future slash commands or a `factory` CLI should behave. They are documentation for v1, not implemented automation.
+These contracts define how Codex-facing workflow commands should behave. They are documentation for v1, not implemented automation.
+
+The primary interface is conversation with Codex. Slash-style names are stable shorthand for intent, but the human may also ask in plain language, such as "run project status." A separate `factory` CLI is a later option, not the default direction.
 
 Commands must help the human move through the Software Factory process without bypassing approval gates. When a command cannot prove that required state is safe, it should fail closed and explain what is missing.
 
@@ -158,7 +160,7 @@ Gate behavior:
 - A phase command must not approve itself.
 - A phase command must ask the human for approval before moving forward.
 
-### `/status`
+### `/project-status`
 
 Purpose: summarize current project state.
 

@@ -2,11 +2,12 @@
 
 ## 2026-06-18
 
-- Added command contracts for future slash-command or `factory` CLI automation.
+- Added command contracts for future Codex-style workflow automation.
 - Defined minimum checklist state transitions for phase commands and gates.
 - Linked command contracts from the command README.
 - Added a non-secret `GITHUB_TOKEN` placeholder to `.env.example`.
 - Added manual artifact validation guidance for paired Markdown/JSON records.
+- Renamed the project state command from `/status` to `/project-status` to avoid Codex command ambiguity.
 
 ## 2026-06-17
 
@@ -17,7 +18,7 @@
 - Updated the roadmap to reflect completed GitHub and scratchpad decisions.
 - Added repository-boundary guidance for publishing Software Factory without local projects or private memory.
 - Added `.env.example` and expanded `.gitignore` to protect local projects, vault data, secrets, dependencies, build outputs, and local databases.
-- Added project checklist templates for human progress tracking and future slash-command automation.
+- Added project checklist templates for human progress tracking and future Codex-style command automation.
 - Updated command and project-structure rules so every phase can update checklist state.
 - Aligned phase docs so every phase explicitly updates checklist files and produces a phase gate.
 - Ignored local scratchpad idea files before the first framework commit.

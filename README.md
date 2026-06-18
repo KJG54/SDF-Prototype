@@ -12,7 +12,7 @@ The framework is designed around a simple belief: agents should make technical w
 - Approval gates so agents do not silently change the direction of a project.
 - Local project folders that stay separate from the framework itself.
 - A memory vault for session summaries, lessons learned, reusable patterns, and known problems.
-- Planned slash-command automation that can later run the same process more quickly.
+- Planned Codex-style workflow commands that can later run the same process more quickly.
 
 ## Start Here
 
@@ -94,9 +94,9 @@ The framework repository should not contain local project work or private memory
 
 If a user wants to publish an example project or sanitized memory note, copy it into a dedicated public examples or docs folder instead of committing the live local folder.
 
-## Planned Commands
+## Planned Codex Commands
 
-The command system is documented now and can be automated later. See [commands/README.md](commands/README.md).
+The command system is documented now for use directly in Codex conversation and can be automated later. See [commands/README.md](commands/README.md).
 
 Key commands:
 
@@ -104,7 +104,7 @@ Key commands:
 - `/vision`: interview the user about what they want to build.
 - `/architecture`: choose stack, runtime, dependency, and environment strategy.
 - `/gate`: confirm the current phase is complete before moving on.
-- `/status`: summarize project state from the checklist and artifacts.
+- `/project-status`: summarize project state from the checklist and artifacts.
 - `/memory`: record lessons learned and reusable patterns after the project is done.
 - `/wrap-up`: create a session summary.
 
@@ -114,6 +114,7 @@ Key commands:
 - [Windows Local Development](standards/windows-local-development.md)
 - [Git / GitHub](standards/git-github.md)
 - [Project Audit](standards/project-audit.md)
+- [Artifact Validation](standards/artifact-validation.md)
 - [User Acceptance Testing](standards/user-acceptance-testing.md)
 - [Framework Git / Backup](standards/framework-git-backup.md)
 
