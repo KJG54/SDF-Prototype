@@ -11,6 +11,8 @@ Package and prepare the project for other people to use.
 - Distinguish source-code shipping, installer/package shipping, hosted deployment, and store/publication.
 - Prepare README, setup instructions, dependency notes, known issues, and release notes.
 - Confirm that documentation, verification, security review, and operational notes fit the chosen shipping target.
+- Confirm that approved tools, local commands, validation checks, and required system prerequisites are documented for the shipping target.
+- For Tauri desktop apps, confirm the dependency audit, permission/capability review, lockfile checks, and packaging exclusions required by `standards/tauri-dependency-audit.md`.
 - If installer/package creation is not part of the chosen shipping target, document it as deferred instead of treating it as a blocker.
 - Ask approval before publishing, pushing, deploying, or creating external resources.
 - Give beginner-safe instructions for any human-run GitHub, deployment, packaging, or terminal steps.

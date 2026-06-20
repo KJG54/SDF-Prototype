@@ -1,10 +1,135 @@
 {
-  "tools": [],
+  "tools": [
+    {
+      "name": "Git",
+      "status": "core",
+      "responsibility": "Version control, rollback, review, and handoff."
+    },
+    {
+      "name": "Local file system",
+      "status": "core",
+      "responsibility": "Project artifacts, generated code, logs, memory, templates, and handoffs."
+    },
+    {
+      "name": "Markdown + JSON artifacts",
+      "status": "core",
+      "responsibility": "Human-readable and agent-readable project state."
+    },
+    {
+      "name": "Artifact validation",
+      "status": "core",
+      "responsibility": "Markdown/JSON pair validation and core JSON Schema checks."
+    },
+    {
+      "name": "JSON Schema contracts",
+      "status": "core",
+      "responsibility": "Machine-readable contracts for project status, checklists, gates, summaries, tasks, common phase artifacts, actions, and approvals."
+    },
+    {
+      "name": "Local command runner",
+      "status": "core",
+      "responsibility": "Optional repo-local PowerShell runner for safe checks and read-only status views."
+    },
+    {
+      "name": "Local logs and events",
+      "status": "core",
+      "responsibility": "Ignored JSONL event files for troubleshooting breadcrumbs; artifacts remain authoritative."
+    },
+    {
+      "name": "File-based task records",
+      "status": "core",
+      "responsibility": "Markdown/JSON task records for coordination without external task managers or brokers."
+    },
+    {
+      "name": "Tauri dependency audit",
+      "status": "core",
+      "responsibility": "Rust/Cargo, frontend dependency, permission, webview, and local-data audit guidance for Tauri desktop apps."
+    },
+    {
+      "name": "Secret safety rules",
+      "status": "core",
+      "responsibility": "Prevent accidental credential leakage."
+    },
+    {
+      "name": "Mermaid",
+      "status": "preferred",
+      "responsibility": "Lightweight diagrams in Markdown."
+    },
+    {
+      "name": "Docker",
+      "status": "preferred",
+      "responsibility": "Project reproducibility and local service setup when it reduces burden."
+    },
+    {
+      "name": "Docker Compose",
+      "status": "preferred",
+      "responsibility": "Local multi-service project templates when needed."
+    },
+    {
+      "name": "GitHub",
+      "status": "optional",
+      "responsibility": "Remote backup, collaboration, publishing, and pull request workflow."
+    },
+    {
+      "name": "GitHub Actions",
+      "status": "optional",
+      "responsibility": "Cloud CI for GitHub projects with local check equivalents."
+    },
+    {
+      "name": "Obsidian",
+      "status": "optional",
+      "responsibility": "Local knowledge interface over Markdown files."
+    },
+    {
+      "name": "Chroma",
+      "status": "deferred",
+      "responsibility": "Targeted semantic search after retrieval pain is proven."
+    },
+    {
+      "name": "Kubernetes",
+      "status": "rejected-for-now",
+      "responsibility": "Cluster orchestration; too heavy for current local-first workflow."
+    },
+    {
+      "name": "Minikube",
+      "status": "rejected-for-now",
+      "responsibility": "Local Kubernetes testing; deferred with Kubernetes."
+    },
+    {
+      "name": "Temporal",
+      "status": "deferred",
+      "responsibility": "Durable workflow orchestration after CLI/file workflows are insufficient."
+    },
+    {
+      "name": "Redis",
+      "status": "deferred",
+      "responsibility": "Queues, caches, or event streams after file events are insufficient."
+    },
+    {
+      "name": "RabbitMQ",
+      "status": "deferred",
+      "responsibility": "Reliable async messaging between multiple services."
+    },
+    {
+      "name": "Prometheus/Grafana/OpenTelemetry",
+      "status": "deferred",
+      "responsibility": "Observability after long-running services exist."
+    },
+    {
+      "name": "Jira/ClickUp/Trello/Confluence/Miro",
+      "status": "rejected-for-now",
+      "responsibility": "Cloud-oriented tools that duplicate local files, Markdown, and optional Obsidian."
+    }
+  ],
   "statuses": [
     "known",
+    "core",
     "preferred",
     "approved",
+    "optional",
+    "deferred",
     "restricted",
-    "deprecated"
+    "deprecated",
+    "rejected-for-now"
   ]
 }

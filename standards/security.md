@@ -8,4 +8,5 @@
 - Check authentication, authorization, and permissions when relevant.
 - Review deployment surfaces before shipping.
 - Review browser/webview security surfaces when relevant, including CSP, link protocols, and local file access.
+- For Tauri desktop apps, review Rust/Cargo dependencies, frontend dependencies, native permissions/capabilities, webview surfaces, and local-data packaging with `standards/tauri-dependency-audit.md`.
 - Run a secret scan before publishing or pushing when credentials were used during the project.

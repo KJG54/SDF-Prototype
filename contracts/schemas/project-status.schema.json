@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "project-status.schema.json",
+  "title": "Software Factory Project Status",
+  "type": "object",
+  "required": [
+    "project_name",
+    "slug",
+    "state",
+    "current_phase",
+    "summary",
+    "latest_decision",
+    "open_questions",
+    "next_step",
+    "current_phase_gate",
+    "blocking_issues",
+    "checklist_files"
+  ],
+  "properties": {
+    "project_name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "current_phase": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "latest_decision": {
+      "type": "string"
+    },
+    "open_questions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "next_step": {
+      "type": "string"
+    },
+    "current_phase_gate": {
+      "type": "string"
+    },
+    "blocking_issues": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "checklist_files": {
+      "type": "object",
+      "required": ["human", "machine"],
+      "properties": {
+        "human": {
+          "type": "string"
+        },
+        "machine": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

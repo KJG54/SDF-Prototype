@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "task-record.schema.json",
+  "title": "Software Factory Task Record",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "title",
+    "status",
+    "scope",
+    "project_slug",
+    "phase",
+    "created_at",
+    "created_by",
+    "goal",
+    "context",
+    "acceptance_criteria",
+    "constraints",
+    "related_files",
+    "approval_required",
+    "approval_status",
+    "assigned_to",
+    "claim_status",
+    "handoff_required",
+    "notes"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["proposed", "approved", "in-progress", "blocked", "ready-for-review", "done", "deferred", "cancelled"]
+    },
+    "scope": {
+      "type": "string",
+      "enum": ["framework", "project"]
+    },
+    "project_slug": {
+      "type": ["string", "null"]
+    },
+    "phase": {
+      "type": ["string", "null"]
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "created_by": {
+      "type": "string"
+    },
+    "goal": {
+      "type": "string"
+    },
+    "context": {
+      "type": "string"
+    },
+    "acceptance_criteria": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "constraints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "related_files": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "approval_required": {
+      "type": "boolean"
+    },
+    "approval_status": {
+      "type": "string",
+      "enum": ["not-required", "pending", "approved", "rejected", "deferred"]
+    },
+    "assigned_to": {
+      "type": ["string", "null"]
+    },
+    "claim_status": {
+      "type": "string",
+      "enum": ["unclaimed", "claimed", "released", "completed"]
+    },
+    "handoff_required": {
+      "type": "boolean"
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

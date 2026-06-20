@@ -1,0 +1,32 @@
+{
+  "id": "OPERATING-001",
+  "type": "project_operating_model",
+  "status": "pending",
+  "operating_tier": {
+    "tier": "",
+    "why_it_fits": "",
+    "agent_behavior_changes": "",
+    "intentionally_avoids": "",
+    "higher_touch_triggers": []
+  },
+  "rigor_level_relationship": {
+    "starting_rigor_level": "",
+    "safety_floor": "Operating tier does not reduce security, privacy, approval, or verification work required by the project's real risk."
+  },
+  "primary_agent_role": "",
+  "agent_posture_personality": "",
+  "skills_procedures_likely_needed": [],
+  "workflow_prompts_likely_used": [],
+  "expected_artifacts": [],
+  "broad_plan": {
+    "day": "",
+    "week": "",
+    "month_or_longer": ""
+  },
+  "approval_boundaries": {
+    "codex_can_do_without_special_approval": [],
+    "requires_explicit_human_approval": []
+  },
+  "open_questions": []
+}
+

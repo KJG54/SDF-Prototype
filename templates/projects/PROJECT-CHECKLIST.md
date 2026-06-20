@@ -16,7 +16,7 @@ startup | vision | requirements | architecture | build-plan | scaffold | impleme
 
 | Phase | Status | Required Human Approval | Required Artifacts | Blocking Issues | Next Action |
 | --- | --- | --- | --- | --- | --- |
-| Startup | pending | no | STARTUP-001, STATUS, project checklist | none | TBD |
+| Startup | pending | no | STARTUP-001, OPERATING-001, STATUS, project checklist | none | TBD |
 | Vision Interview | pending | yes | VISION-001, SUMMARY-001, GATE-001 | none | TBD |
 | Requirements | pending | yes | REQ-001, SUMMARY-001, GATE-001 | none | TBD |
 | Tech Stack / Architecture | pending | yes | ARCH-001, ENV-001, SUMMARY-001, GATE-001 | none | TBD |

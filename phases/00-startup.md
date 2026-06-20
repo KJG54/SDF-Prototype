@@ -7,9 +7,11 @@ Create the project wrapper, capture the first useful context, and decide whether
 ## Agent Responsibilities
 
 - Ask the startup questions from `standards/new-project-startup.md`.
+- Recommend a project operating tier from `standards/project-operating-tiers.md`.
 - Create or update the project wrapper at `projects/<slug>/` when the human wants to continue.
 - Create or update `STATUS.md`, `status.json`, `PROJECT-CHECKLIST.md`, and `project-checklist.json` from the project templates.
 - Create `STARTUP-001-new-project-startup.md` and `STARTUP-001-new-project-startup.json`.
+- Create `OPERATING-001-project-operating-model.md` and `OPERATING-001-project-operating-model.json`.
 - Keep generated source code out of `workspace/` until scaffolding is approved.
 - Surface early blockers, privacy concerns, runtime constraints, and tool-install constraints.
 - Recommend whether to continue to the Vision Interview.
@@ -29,10 +31,12 @@ Create the project wrapper, capture the first useful context, and decide whether
 - `project-checklist.json`
 - `STARTUP-001-new-project-startup.md`
 - `STARTUP-001-new-project-startup.json`
+- `OPERATING-001-project-operating-model.md`
+- `OPERATING-001-project-operating-model.json`
 - Human-action files when needed
 
 ## Exit Criteria
 
-The startup context is clear enough to begin the Vision Interview, or the agent has explained what is missing and why it blocks progress.
+The startup context and operating tier are clear enough to begin the Vision Interview, or the agent has explained what is missing and why it blocks progress.
 
 Startup does not require the same project-shaping approval as later phases, but the agent should still summarize the startup result and ask whether the human wants to continue to Phase 1.

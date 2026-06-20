@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "human-action.schema.json",
+  "title": "Software Factory Human Action",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "status",
+    "action_type",
+    "what_to_do",
+    "why",
+    "who_does_this",
+    "where_to_do_it",
+    "before_you_start",
+    "exact_steps",
+    "exact_commands",
+    "how_to_verify",
+    "if_something_goes_wrong",
+    "what_to_tell_agent",
+    "agent_can_do_later_with_approval",
+    "blocks_current_phase"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "type": "string" },
+    "status": { "type": "string" },
+    "action_type": { "type": "string" },
+    "what_to_do": { "type": "string" },
+    "why": { "type": "string" },
+    "who_does_this": { "type": "string" },
+    "where_to_do_it": { "type": "string" },
+    "before_you_start": { "type": "array", "items": { "type": "string" } },
+    "exact_steps": { "type": "array", "items": { "type": "string" } },
+    "exact_commands": { "type": "array", "items": { "type": "string" } },
+    "how_to_verify": { "type": "string" },
+    "if_something_goes_wrong": { "type": "string" },
+    "what_to_tell_agent": { "type": "string" },
+    "agent_can_do_later_with_approval": { "type": "boolean" },
+    "blocks_current_phase": { "type": "boolean" }
+  }
+}

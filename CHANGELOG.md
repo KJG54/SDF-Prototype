@@ -1,5 +1,26 @@
 # Changelog
 
+## 2026-06-20
+
+- Closed the Portfolio workflow state and normalized gate/status wording for the completed project wrapper.
+- Reviewed the added SDF toolbox discussion and chose a conservative starter-toolbox path instead of adding heavier infrastructure by default.
+- Confirmed the Software Factory MVP direction as script-assisted and local-first, with lightweight runner, validation, schema, and secret-scan support in scope.
+- Updated roadmap, deferred work, and fixes notes so implemented validation/Tauri guidance are no longer listed as wholly deferred.
+- Added project operating tiers and `OPERATING-001` startup templates so each project can choose a full, standard, lean, or fast-MVP operating model before deeper phases begin.
+- Added tool adoption and starter toolbox standards, then connected them through the README, roadmap, phase docs, command docs, tool-use rules, and tool registry.
+- Added core JSON Schema contracts and expanded schema coverage across project state, checklists, phase artifacts, approvals, human actions, requirements, architecture, environment setup, build plans, scaffold notes, implementation notes, verification, review, shipping, task records, local events, and memory packets.
+- Wired expanded schema validation into `tools/artifact-validate.ps1`.
+- Added the repo-local runner `tools/factory.ps1` for safe checks and read-only framework/project views.
+- Documented the local runner in `commands/local-runner.md`.
+- Added local JSONL event log guidance, ignored log paths, event schema, and runner support for appending/viewing events.
+- Added file-based task record guidance, schema, templates, and runner support for listing tasks.
+- Added Rust/Tauri dependency audit guidance and linked it from stack profiles, architecture, review, ship, security, README, roadmap, and registry docs.
+- Created a local ignored `toolbox-smoke-test` project to validate stack profiles, rigor levels, starter toolbox policy, local runner commands, local events, task records, schemas, and Tauri audit guidance.
+- Cleaned legacy Recipe Keeper wrapper validation warnings while preserving it as a historical legacy reference.
+- Added semantic artifact checks for project state references, status/checklist identity drift, active phase alignment, phase-gate approval consistency, and blocking gate conditions.
+- Updated artifact validation guidance and roadmap status to reflect the new semantic checks.
+- Added a session summary for the toolbox/framework hardening work after the initial wrap-up missed the memory/changelog step.
+
 ## 2026-06-18
 
 - Added command contracts for future Codex-style workflow automation.

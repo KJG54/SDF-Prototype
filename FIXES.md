@@ -10,13 +10,14 @@ Use this file to track things that should be fixed in Software Factory or in pro
 
 - Add deeper semantic checks later to enforce phase gates and unresolved-error blocking.
 - Document the generated-project nested repository pattern more explicitly, or decide whether generated workspaces should live outside the framework folder.
-- Add Rust/Tauri audit guidance, such as when to run `cargo audit`, for desktop apps.
-- Clean up legacy Recipe Keeper wrapper artifact-validation warnings so the dry-run project matches the newer artifact rules.
 - Expand the tool registry over time as more stacks are proven through real projects.
+- Define a safe cleanup workflow before deleting ignored local files, private memory, generated project output, or placeholder folder notes.
+- Decide whether `roles/README.md` should remain separate or be merged into the agent role docs.
+- Decide whether `commands/potential-future-commands.md` should remain separate or be folded into roadmap/idea intake.
 
 ## Resolved
 
-- Cleared stale active-project state from actory.config.json.
+- Cleared stale active-project state from `factory.config.json`.
 - Added a formal Startup phase doc.
 - Added named later-phase artifact templates for scaffold, implementation, verification, review, and ship.
 - Aligned project checklist Markdown and JSON required artifacts.
@@ -56,3 +57,6 @@ Use this file to track things that should be fixed in Software Factory or in pro
 - External review found that paired artifact validation was manual only. Status: partially resolved with `tools/artifact-validate.ps1`; deeper semantic checks remain deferred.
 - Verified dependency reproducibility for the Recipe Keeper generated project with `npm.cmd ci`, `npm.cmd run build`, `cargo metadata --locked --format-version 1`, `cargo check --locked`, and `npm.cmd run build:desktop:debug`. Broader generated-project guidance can still be expanded as new stacks appear.
 - Added project rigor levels and stack profiles so future projects can start from known-good defaults without committing to heavy templates or automation.
+- Added Rust/Tauri audit guidance and connected it to desktop architecture, review, ship, security, stack-profile, and registry docs.
+- Cleaned up legacy Recipe Keeper wrapper artifact-validation warnings so the dry-run project matches the newer artifact rules.
+- Confirmed the framework MVP direction as script-assisted and local-first.

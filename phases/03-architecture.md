@@ -8,6 +8,9 @@ Choose how the project should be built.
 
 - Recommend a stack based on the project, not personal preference.
 - Check `standards/stack-profiles.md` for a known-good stack profile before recommending a custom stack.
+- Check `standards/starter-toolbox.md` and `tools/registry.md` before recommending tools.
+- Apply `standards/tool-adoption.md` before adding any tool that is not already core or clearly required by the selected stack profile.
+- Apply `standards/tauri-dependency-audit.md` when recommending Tauri or another Rust-backed desktop stack.
 - Compare alternatives only when tradeoffs matter.
 - Consider existing tools, libraries, databases, hosting, security, privacy, and cost.
 - Choose a stack that supports the approved target platforms unless the human approves a narrower target.
@@ -17,6 +20,7 @@ Choose how the project should be built.
 - Create a step-by-step setup guide for any tools needed to develop, run, test, or package the project.
 - Update `PROJECT-CHECKLIST.md` and `project-checklist.json`.
 - Ask approval for major dependencies or services.
+- Classify each meaningful tool as core, preferred, optional, deferred, restricted, or rejected-for-now when the classification affects the architecture.
 
 ## Human Responsibilities
 
@@ -56,6 +60,7 @@ Document these before scaffolding:
 - Quality level: prototype, local tool, internal tool, public app, business-critical system, or another justified category.
 - Quality implications: testing, documentation, security, deployment, observability, and maintenance expectations that fit the chosen quality level.
 - Stack profile: selected known-good profile or `custom`, with reasons.
+- Tool adoption: any new tool's classification, why it is needed, what it replaces, setup burden, local/cloud status, data/security implications, and replacement path.
 
 Project-local dependencies are preferred. System installs are acceptable when they are foundational tools, OS-level requirements, or clearly simpler and safer than local isolation.
 

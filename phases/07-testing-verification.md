@@ -7,6 +7,7 @@ Prove the project works for the human.
 ## Agent Responsibilities
 
 - Run technical checks.
+- Run schema validation for core Software Factory artifacts when project state or phase artifacts changed.
 - Test core workflows.
 - Match verification depth to the project's approved quality level and risk.
 - Provide clear manual testing instructions.
@@ -15,6 +16,7 @@ Prove the project works for the human.
 - Ask the human to verify subjective, visual, interactive, or goal-fit behavior.
 - Keep a clear list of what passed, failed, needs retest, or was deferred.
 - Document any important behavior that remains unverified and why.
+- Verify approved tools using their documented local setup and verification commands.
 - Update `PROJECT-CHECKLIST.md` and `project-checklist.json`.
 
 ## Human Responsibilities

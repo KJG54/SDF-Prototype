@@ -1,0 +1,22 @@
+{
+  "id": "TASK-001",
+  "type": "task_record",
+  "title": "",
+  "status": "proposed",
+  "scope": "project",
+  "project_slug": null,
+  "phase": null,
+  "created_at": "",
+  "created_by": "Codex",
+  "goal": "",
+  "context": "",
+  "acceptance_criteria": [],
+  "constraints": [],
+  "related_files": [],
+  "approval_required": false,
+  "approval_status": "not-required",
+  "assigned_to": null,
+  "claim_status": "unclaimed",
+  "handoff_required": false,
+  "notes": ""
+}

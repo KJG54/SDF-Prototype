@@ -21,6 +21,7 @@ projects/<slug>/
     human-actions/
     phase-gates/
     phase-summaries/
+    tasks/
     testing/
     review/
     shipping/
@@ -37,6 +38,15 @@ projects/<slug>/
 ```
 
 Generated project workspaces should be GitHub-ready and independent whenever practical.
+
+Human-action artifacts use paired Markdown and JSON files in `artifacts/human-actions/`, for example:
+
+```text
+projects/<slug>/artifacts/human-actions/ACTION-001-install-node.md
+projects/<slug>/artifacts/human-actions/ACTION-001-install-node.json
+```
+
+Framework-level human actions may use the same pattern under `artifacts/human-actions/`.
 
 ## Checklist Rule
 

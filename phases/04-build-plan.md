@@ -9,6 +9,8 @@ Create a complete plan agents can execute from scaffold to ship.
 - Break work into clear tasks.
 - Include likely files or areas involved.
 - Add acceptance criteria and verification steps.
+- Include setup, validation, logging, and tool-adoption tasks when the architecture approved new tools.
+- Prefer starter-toolbox primitives before adding services, brokers, workflow engines, or cloud platforms.
 - Mark Claude delegation candidates.
 - Identify approval gates.
 - Update `PROJECT-CHECKLIST.md` and `project-checklist.json`.

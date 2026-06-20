@@ -20,6 +20,7 @@ The agent should confirm:
 - Where the finished project should run.
 - Whether broad platform support is expected.
 - The likely project rigor level from `standards/project-rigor-levels.md`.
+- The likely project operating tier from `standards/project-operating-tiers.md`.
 - Whether dependencies should be project-local when practical.
 - Whether Docker, Conda, Python virtual environments, dev containers, or similar isolation tools are acceptable.
 - Known constraints, examples, styles, required tools, privacy concerns, or deadlines.
@@ -32,6 +33,8 @@ The agent should confirm:
 - Surface obvious risks early.
 - Create or update `STARTUP-001` when a project begins.
 - Recommend a starting project rigor level, explain what it means, and mark it as revisitable.
+- Recommend an operating tier, explain how much process/detail it implies, and mark it as revisitable.
+- Create or update `OPERATING-001` so the project has a clear role, posture, skill, command, artifact, and broad-plan model before deeper work begins.
 - Move into the Vision Interview only after the startup context is clear enough.
 
 ## Exit Criteria
@@ -39,4 +42,5 @@ The agent should confirm:
 - The human has described the project in plain language.
 - The development environment context is known or marked as an open question.
 - The target platform context is known or marked as an open question.
+- The operating tier is selected or marked as an open question.
 - The agent can begin the Vision Interview with enough context to ask smarter follow-up questions.

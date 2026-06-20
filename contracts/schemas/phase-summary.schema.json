@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "phase-summary.schema.json",
+  "title": "Software Factory Phase Summary",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "phase",
+    "what_happened",
+    "plain_language_summary",
+    "decisions",
+    "artifacts_created_or_updated",
+    "open_questions",
+    "human_actions",
+    "risks_blockers",
+    "errors_resolved_this_phase",
+    "errors_or_issues_deferred",
+    "what_the_human_should_check",
+    "next_recommendation",
+    "approval_question",
+    "approval_status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "phase": {
+      "type": "string"
+    },
+    "what_happened": {
+      "type": "string"
+    },
+    "plain_language_summary": {
+      "type": "string"
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "artifacts_created_or_updated": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "open_questions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "human_actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "beginner_safe_instructions_for_the_human": {
+      "type": "object"
+    },
+    "risks_blockers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "errors_resolved_this_phase": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "errors_or_issues_deferred": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "what_the_human_should_check": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "next_recommendation": {
+      "type": "string"
+    },
+    "approval_question": {
+      "type": "string"
+    },
+    "approval_status": {
+      "type": "string"
+    }
+  }
+}

@@ -2,6 +2,10 @@
 
 Codex leads. Claude collaborates when useful.
 
+Use `standards/file-based-task-records.md` when work needs durable task records, claims, or coordination without adding an external task manager or broker.
+
+Task records coordinate planned work. They do not replace phase artifacts, approvals, status files, checklists, delegation artifacts, or handoff artifacts.
+
 ## Delegation
 
 Every delegated task needs:
@@ -12,6 +16,8 @@ Every delegated task needs:
 - acceptance criteria
 - approval boundaries
 - expected handoff format
+
+If the work is substantial enough to track separately, create or reference a `TASK-*` record before delegation.
 
 ## When To Consider Claude
 

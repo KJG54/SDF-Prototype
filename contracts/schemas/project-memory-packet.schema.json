@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "project-memory-packet.schema.json",
+  "title": "Software Factory Project Memory Packet",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "project_summary",
+    "what_was_built",
+    "stack_tools",
+    "major_decisions",
+    "problems_and_fixes",
+    "reusable_patterns",
+    "avoid_next_time",
+    "stable_user_preferences",
+    "links"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "type": "string" },
+    "project_summary": { "type": "string" },
+    "what_was_built": { "type": "string" },
+    "stack_tools": { "type": "array" },
+    "major_decisions": { "type": "array" },
+    "problems_and_fixes": { "type": "array" },
+    "reusable_patterns": { "type": "array" },
+    "avoid_next_time": { "type": "array" },
+    "stable_user_preferences": { "type": "array" },
+    "links": { "type": "array" }
+  }
+}

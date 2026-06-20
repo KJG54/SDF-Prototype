@@ -8,6 +8,8 @@ Create the project skeleton and workspace.
 
 - Create only the approved structure.
 - Keep generated source code in `projects/<slug>/workspace/`.
+- Scaffold only approved tools and local files. Do not add deferred or rejected-for-now toolbox items during scaffold unless the human explicitly approved a new decision.
+- Include local logs, validation files, task files, or command scripts when they were approved as part of the starter toolbox approach.
 - For larger or riskier projects, show the proposed structure before creating it.
 - Update `PROJECT-CHECKLIST.md` and `project-checklist.json`.
 - Summarize what was created.

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "requirements.schema.json",
+  "title": "Software Factory Requirements",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "status",
+    "summary",
+    "target_users",
+    "goals",
+    "must_have",
+    "nice_to_have",
+    "out_of_scope",
+    "constraints",
+    "assumptions",
+    "success_criteria",
+    "project_rigor_level",
+    "open_questions",
+    "approval"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "type": "string" },
+    "status": { "type": "string" },
+    "summary": { "type": "string" },
+    "target_users": { "type": "array", "items": { "type": "string" } },
+    "goals": { "type": "array", "items": { "type": "string" } },
+    "must_have": { "type": "array", "items": { "type": "string" } },
+    "nice_to_have": { "type": "array", "items": { "type": "string" } },
+    "out_of_scope": { "type": "array", "items": { "type": "string" } },
+    "constraints": { "type": "array", "items": { "type": "string" } },
+    "assumptions": { "type": "array", "items": { "type": "string" } },
+    "success_criteria": { "type": "array", "items": { "type": "string" } },
+    "project_rigor_level": {
+      "type": "object",
+      "required": ["level", "why_it_fits", "quality_implications"]
+    },
+    "open_questions": { "type": "array", "items": { "type": "string" } },
+    "approval": { "type": "object", "required": ["status", "approved_by", "approved_at"] }
+  }
+}

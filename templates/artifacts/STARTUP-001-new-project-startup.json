@@ -11,6 +11,11 @@
     "why_it_fits": "",
     "upgrade_triggers": []
   },
+  "operating_tier": {
+    "tier": "",
+    "why_it_fits": "",
+    "higher_touch_triggers": []
+  },
   "human_experience_and_preferences": {
     "technical_experience": "",
     "explanation_level": "balanced",

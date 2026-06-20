@@ -184,12 +184,17 @@ Default commands:
 - `npm run dev`;
 - `npm run build`;
 - `cargo check --locked`;
+- `cargo test --locked` when tests exist;
+- `cargo audit` when available and justified by project risk;
+- frontend dependency audit command such as `npm audit` when npm dependencies exist;
 - Tauri dev/build commands defined by the project.
 
 Verification:
 
 - web build succeeds;
 - Cargo check succeeds with locked dependencies;
+- Rust and frontend dependency audit results are recorded according to `standards/tauri-dependency-audit.md`;
+- Tauri permissions/capabilities are reviewed when native access is used;
 - desktop app launches on the development OS;
 - core desktop workflows are manually tested.
 
@@ -198,11 +203,12 @@ Risks and tradeoffs:
 - higher setup burden than a web app;
 - native prerequisites vary by operating system;
 - packaging/installers require extra shipping work.
+- dependency and permission surfaces are broader than plain web apps because Tauri bridges web UI and native capabilities.
 
 Upgrade path:
 
 - add installer packaging playbooks when the human wants distribution beyond GitHub source;
-- add supply-chain audit guidance for Rust/Tauri dependencies.
+- apply `standards/tauri-dependency-audit.md` before review and shipping.
 
 ### Python CLI Or Local Automation
 

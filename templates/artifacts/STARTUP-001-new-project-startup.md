@@ -24,6 +24,14 @@ Why this level fits: TBD
 
 What would trigger a higher level: TBD
 
+## Operating Tier
+
+Tier 1 full operating model | Tier 2 standard guided project | Tier 3 lean build | Tier 4 fast MVP | TBD
+
+Why this tier fits: TBD
+
+What would trigger a higher-touch tier: TBD
+
 ## Human Experience And Preferences
 
 - Technical experience: beginner | intermediate | advanced | mixed | TBD

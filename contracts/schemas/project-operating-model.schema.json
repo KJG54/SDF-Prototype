@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "project-operating-model.schema.json",
+  "title": "Software Factory Project Operating Model",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "status",
+    "operating_tier",
+    "rigor_level_relationship",
+    "primary_agent_role",
+    "agent_posture_personality",
+    "skills_procedures_likely_needed",
+    "workflow_prompts_likely_used",
+    "expected_artifacts",
+    "broad_plan",
+    "approval_boundaries",
+    "open_questions"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "operating_tier": {
+      "type": "object"
+    },
+    "rigor_level_relationship": {
+      "type": "object"
+    },
+    "primary_agent_role": {
+      "type": "string"
+    },
+    "agent_posture_personality": {
+      "type": "string"
+    },
+    "skills_procedures_likely_needed": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "workflow_prompts_likely_used": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "expected_artifacts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "broad_plan": {
+      "type": "object"
+    },
+    "approval_boundaries": {
+      "type": "object"
+    },
+    "open_questions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

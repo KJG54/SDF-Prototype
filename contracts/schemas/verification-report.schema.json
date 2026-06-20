@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "verification-report.schema.json",
+  "title": "Software Factory Verification Report",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "project",
+    "verification_scope",
+    "automated_checks",
+    "manual_checks",
+    "user_acceptance_testing",
+    "passed",
+    "failed",
+    "fixed_during_verification",
+    "deferred_with_approval",
+    "remaining_risks"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "type": "string" },
+    "project": { "type": "string" },
+    "verification_scope": { "type": "string" },
+    "automated_checks": { "type": "array" },
+    "manual_checks": { "type": "array" },
+    "user_acceptance_testing": { "type": "string" },
+    "passed": { "type": "array" },
+    "failed": { "type": "array" },
+    "fixed_during_verification": { "type": "array" },
+    "deferred_with_approval": { "type": "array" },
+    "remaining_risks": { "type": "array" }
+  }
+}

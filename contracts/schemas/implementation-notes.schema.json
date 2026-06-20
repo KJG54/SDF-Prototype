@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "implementation-notes.schema.json",
+  "title": "Software Factory Implementation Notes",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "project",
+    "implementation_slice",
+    "approved_scope_implemented",
+    "files_areas_changed",
+    "behavior_added_or_changed",
+    "verification_performed",
+    "human_feedback_requested",
+    "known_issues",
+    "deferred_items"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "type": "string" },
+    "project": { "type": "string" },
+    "implementation_slice": { "type": "string" },
+    "approved_scope_implemented": { "type": "array", "items": { "type": "string" } },
+    "files_areas_changed": { "type": "array", "items": { "type": "string" } },
+    "behavior_added_or_changed": { "type": "array", "items": { "type": "string" } },
+    "verification_performed": { "type": "array", "items": { "type": "string" } },
+    "human_feedback_requested": { "type": "array", "items": { "type": "string" } },
+    "known_issues": { "type": "array", "items": { "type": "string" } },
+    "deferred_items": { "type": "array", "items": { "type": "string" } }
+  }
+}

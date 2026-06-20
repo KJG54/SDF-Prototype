@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "build-plan.schema.json",
+  "title": "Software Factory Build Plan",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "status",
+    "summary",
+    "runtime_environment_prerequisites",
+    "phase_gate_expectations",
+    "tasks",
+    "approval"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "type": "string" },
+    "status": { "type": "string" },
+    "summary": { "type": "string" },
+    "runtime_environment_prerequisites": { "type": "array", "items": { "type": "string" } },
+    "phase_gate_expectations": { "type": "array", "items": { "type": "string" } },
+    "tasks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "goal",
+          "likely_files_or_areas",
+          "prerequisites",
+          "acceptance_criteria",
+          "risk_level",
+          "claude_delegate_candidate",
+          "expected_verification",
+          "human_approval_before",
+          "human_approval_after"
+        ]
+      }
+    },
+    "approval": { "type": "object", "required": ["status", "approved_by", "approved_at"] }
+  }
+}

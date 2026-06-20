@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "project-checklist.schema.json",
+  "title": "Software Factory Project Checklist",
+  "type": "object",
+  "required": [
+    "project_name",
+    "slug",
+    "purpose",
+    "current_phase",
+    "last_updated",
+    "phases",
+    "open_questions",
+    "human_actions",
+    "deferred_items"
+  ],
+  "properties": {
+    "project_name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "purpose": {
+      "type": "string"
+    },
+    "current_phase": {
+      "type": "string"
+    },
+    "last_updated": {
+      "type": "string"
+    },
+    "phases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "status",
+          "requires_human_approval",
+          "required_artifacts",
+          "blocking_issues",
+          "next_action"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "in-progress",
+              "blocked",
+              "ready-for-gate",
+              "approved",
+              "deferred"
+            ]
+          },
+          "requires_human_approval": {
+            "type": "boolean"
+          },
+          "required_artifacts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "blocking_issues": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "next_action": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "open_questions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "human_actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "deferred_items": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

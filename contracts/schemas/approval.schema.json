@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "approval.schema.json",
+  "title": "Software Factory Approval",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "what_is_being_approved",
+    "why_it_matters",
+    "risks_tradeoffs",
+    "alternatives_considered",
+    "human_decision",
+    "date"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "type": "string" },
+    "what_is_being_approved": { "type": "string" },
+    "why_it_matters": { "type": "string" },
+    "risks_tradeoffs": { "type": "array", "items": { "type": "string" } },
+    "alternatives_considered": { "type": "array", "items": { "type": "string" } },
+    "human_decision": { "type": "string" },
+    "date": { "type": "string" }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "phase-gate.schema.json",
+  "title": "Software Factory Phase Gate",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "phase",
+    "gate_status",
+    "required_artifacts_present",
+    "markdown_json_alignment_checked",
+    "errors_fixed",
+    "deferred_issues",
+    "human_actions",
+    "open_questions",
+    "human_verification",
+    "agent_recommendation",
+    "approval_question",
+    "human_approval"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "phase": {
+      "type": "string"
+    },
+    "gate_status": {
+      "type": "string"
+    },
+    "required_artifacts_present": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "markdown_json_alignment_checked": {
+      "type": "boolean"
+    },
+    "errors_fixed": {
+      "type": "object",
+      "required": ["no_unresolved_current_phase_errors_remain", "notes"],
+      "properties": {
+        "no_unresolved_current_phase_errors_remain": {
+          "type": "boolean"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "security_privacy_check": {
+      "type": "object",
+      "required": ["checked_or_not_relevant", "notes"],
+      "properties": {
+        "checked_or_not_relevant": {
+          "type": "boolean"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "deferred_issues": {
+      "type": "array"
+    },
+    "human_actions": {
+      "type": "object",
+      "required": ["required_actions_complete_or_deferred", "notes"],
+      "properties": {
+        "required_actions_complete_or_deferred": {
+          "type": "boolean"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "open_questions": {
+      "type": "object",
+      "required": ["no_blocking_questions_remain", "notes"],
+      "properties": {
+        "no_blocking_questions_remain": {
+          "type": "boolean"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "human_verification": {
+      "type": "string"
+    },
+    "agent_recommendation": {
+      "type": "string"
+    },
+    "approval_question": {
+      "type": "string"
+    },
+    "human_approval": {
+      "type": "string"
+    }
+  }
+}

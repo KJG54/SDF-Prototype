@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "scaffold-notes.schema.json",
+  "title": "Software Factory Scaffold Notes",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "project",
+    "approved_structure",
+    "created_folders",
+    "created_files",
+    "workspace_location",
+    "setup_performed",
+    "human_actions_created",
+    "verification",
+    "risks_open_questions"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "type": "string" },
+    "project": { "type": "string" },
+    "approved_structure": { "type": "string" },
+    "created_folders": { "type": "array", "items": { "type": "string" } },
+    "created_files": { "type": "array", "items": { "type": "string" } },
+    "workspace_location": { "type": "string" },
+    "setup_performed": { "type": "array", "items": { "type": "string" } },
+    "human_actions_created": { "type": "array", "items": { "type": "string" } },
+    "verification": { "type": "string" },
+    "risks_open_questions": { "type": "array", "items": { "type": "string" } }
+  }
+}

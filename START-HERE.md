@@ -24,13 +24,14 @@ At the end of each phase, Codex should explain what happened, what you should ch
 - What should it help them do?
 - What would a simple first version include?
 - Is this for personal use, public release, business use, or learning?
+- Should Codex use a full operating model, standard guidance, a lean build, or a fast MVP path?
 - What computer and operating system are you using to develop it?
 - Where should the finished project run?
 - Do you want dependencies kept local to the project when practical?
 - Are Docker, Conda, Python virtual environments, or dev containers acceptable if they make setup easier?
 - Are there tools, styles, examples, or constraints you already know you want?
 
-These answers should be captured in `STARTUP-001` before the deeper Vision Interview continues.
+These answers should be captured in `STARTUP-001` and `OPERATING-001` before the deeper Vision Interview continues.
 
 ## What You Can Write In
 

@@ -4,6 +4,8 @@ Use this to scale process, testing, documentation, security, and shipping expect
 
 The goal is proportional quality. Small projects should stay lightweight. Projects with users, money, sensitive data, or public release need stronger discipline.
 
+This is separate from `standards/project-operating-tiers.md`. Rigor level describes risk and quality expectations. Operating tier describes how much agent process, questioning, and detail to spend.
+
 ## Required Use
 
 During Startup or Requirements, classify the project into one rigor level. Revisit the level when scope, audience, data, deployment, or business use changes.

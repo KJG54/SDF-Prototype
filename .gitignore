@@ -1,6 +1,7 @@
 # Local/private framework state
 /projects/
 /memory/vault/
+/logs/
 
 # Local project outputs if a project is intentionally unignored later
 /projects/*/workspace/node_modules/
@@ -15,10 +16,12 @@
 /projects/*/workspace/*.db
 /projects/*/workspace/*.sqlite
 /projects/*/workspace/*.sqlite3
+/projects/*/logs/
 
 # Local scratchpads
 FRAMEWORK-IDEAS.md
 PROJECT-IDEAS.md
+Explanation.md
 
 # Common local files
 .env

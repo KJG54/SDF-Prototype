@@ -8,11 +8,14 @@ Confirm the project is what the human meant to build and is ready to ship.
 
 - Compare result against requirements.
 - Check UX, docs, known issues, and deferred ideas.
+- Check whether tool choices still match `standards/tool-adoption.md` and `standards/starter-toolbox.md`.
 - Check whether engineering quality matches the approved project purpose, risk, audience, and lifecycle.
 - Check security, privacy, credential handling, dependency risk, and deployment surfaces when relevant.
+- For Tauri desktop apps, check Rust/Cargo dependencies, frontend dependencies, Tauri permissions/capabilities, webview surfaces, and local-data handling according to `standards/tauri-dependency-audit.md`.
 - Recommend ship, revise, or pause.
 - Ask whether the project feels like what the human meant to build.
 - Surface honest concerns about scope gaps, quality, risk, or shipping readiness.
+- Flag unapproved or unnecessary tools as review findings.
 - Update `PROJECT-CHECKLIST.md` and `project-checklist.json`.
 
 ## Human Responsibilities

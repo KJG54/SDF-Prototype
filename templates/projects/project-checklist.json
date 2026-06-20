@@ -10,7 +10,7 @@
       "name": "Startup",
       "status": "pending",
       "requires_human_approval": false,
-      "required_artifacts": ["STARTUP-001", "STATUS", "PROJECT-CHECKLIST"],
+      "required_artifacts": ["STARTUP-001", "OPERATING-001", "STATUS", "PROJECT-CHECKLIST"],
       "blocking_issues": [],
       "next_action": ""
     },

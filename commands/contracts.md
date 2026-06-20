@@ -2,7 +2,9 @@
 
 These contracts define how Codex-facing workflow prompts should behave. They are documentation for v1, not implemented automation.
 
-The primary interface is conversation with Codex. Plain-language phrases such as "run project status" are the working interface today. Slash-style names are reserved command names for future native command support, but they are not currently registered with Codex and will not appear in the Codex command picker. A separate `factory` CLI is a later option, not the default direction.
+The primary interface is conversation with Codex. Plain-language phrases such as "run project status" are the working interface today. Slash-style names are reserved command names for future native command support, but they are not currently registered with Codex and will not appear in the Codex command picker.
+
+`tools/factory.ps1` is an optional local runner for safe checks and read-only views. It is not a phase automation engine and must not bypass these contracts.
 
 Workflow prompts must help the human move through the Software Factory process without bypassing approval gates. When a prompt cannot prove that required state is safe, it should fail closed and explain what is missing.
 
@@ -11,14 +13,17 @@ Workflow prompts must help the human move through the Software Factory process w
 Every workflow prompt should:
 
 - Read `factory.config.json` first.
+- Read `standards/tool-adoption.md` and `standards/starter-toolbox.md` when a workflow may add, remove, promote, defer, or evaluate tools.
 - For project commands, read the active project's `STATUS.md`, `status.json`, `PROJECT-CHECKLIST.md`, and `project-checklist.json`.
 - Treat `project-checklist.json` as the agent-readable state record.
 - Treat `PROJECT-CHECKLIST.md` as the human-facing progress record.
 - Keep paired Markdown and JSON artifacts aligned.
 - Use `tools/artifact-validate.ps1` and `standards/artifact-validation.md` for paired-artifact checks.
+- Use `contracts/schemas/` through `tools/artifact-validate.ps1` for core JSON shape checks.
 - Record human actions when the human must install, authenticate, run commands, provide credentials, test manually, or make an external decision.
 - Refuse to advance phases while blocking issues, unresolved errors, required human actions, or required approvals are missing.
 - Ask before changing scope, architecture, dependencies, paid services, cloud resources, deployment, publication, secrets handling, or phase.
+- Apply `standards/tool-adoption.md` before changing tool dependencies, automation platforms, data stores, message brokers, observability systems, or cloud integrations.
 
 Workflow prompts must not:
 
@@ -26,7 +31,34 @@ Workflow prompts must not:
 - Treat documentation-only notes as approved scope.
 - Skip required artifacts because the conversation appears clear.
 - Use GitHub, deployment, cloud, or paid-service actions without explicit human approval.
+- Promote deferred or rejected-for-now starter toolbox items without explicit human approval and a recorded decision.
 - Mark a phase complete only because implementation work is done.
+
+## Local Runner Contract
+
+The repo-local runner may:
+
+- show help;
+- run framework doctor checks;
+- read project status;
+- run artifact validation;
+- run secret scanning;
+- display the tool registry;
+- append and view local ignored JSONL events;
+- display file-based task records.
+
+The repo-local runner must not:
+
+- create projects;
+- update status, checklists, or artifacts;
+- advance phases;
+- approve gates;
+- install tools or dependencies;
+- run GitHub, publishing, deployment, release, or destructive filesystem actions.
+
+Local runner events must follow `standards/local-logs-events.md` and must not be treated as approval or project state.
+
+Task records must follow `standards/file-based-task-records.md` and must not be treated as approval or phase state.
 
 ## Checklist State
 
@@ -104,12 +136,16 @@ Reads:
 
 - `START-HERE.md`
 - `standards/new-project-startup.md`
+- `standards/project-operating-tiers.md`
+- `standards/project-rigor-levels.md`
 - `templates/projects/STATUS.md`
 - `templates/projects/status.json`
 - `templates/projects/PROJECT-CHECKLIST.md`
 - `templates/projects/project-checklist.json`
 - `templates/artifacts/STARTUP-001-new-project-startup.md`
 - `templates/artifacts/STARTUP-001-new-project-startup.json`
+- `templates/artifacts/OPERATING-001-project-operating-model.md`
+- `templates/artifacts/OPERATING-001-project-operating-model.json`
 
 Writes:
 
@@ -119,11 +155,14 @@ Writes:
 - `projects/<slug>/project-checklist.json`
 - `projects/<slug>/artifacts/startup/STARTUP-001-new-project-startup.md`
 - `projects/<slug>/artifacts/startup/STARTUP-001-new-project-startup.json`
+- `projects/<slug>/artifacts/startup/OPERATING-001-project-operating-model.md`
+- `projects/<slug>/artifacts/startup/OPERATING-001-project-operating-model.json`
 - Human-action files when needed
 
 Gate behavior:
 
 - Startup does not require the same project-shaping approval as later phases.
+- Startup should recommend a project operating tier and a starting rigor level before the Vision Interview deepens.
 - The workflow should still ask whether the human wants to continue to Phase 1.
 
 ### Phase Workflows
@@ -148,6 +187,7 @@ Reads:
 - The matching `phases/<phase>.md`
 - Required artifact templates for that phase
 - Relevant standards named by the phase file
+- `standards/tool-adoption.md`, `standards/starter-toolbox.md`, and `tools/registry.md` during architecture, scaffold, review, ship, or tooling decisions
 - Existing phase artifacts
 
 Writes:

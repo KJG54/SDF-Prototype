@@ -44,6 +44,9 @@ Recommended local setup:
 - GitHub authentication through `gh auth login` or Git Credential Manager, not long-lived tokens in `.env`.
 - Optional pre-commit secret scanning with `tools/secret-scan.ps1`.
 - Optional artifact validation with `tools/artifact-validate.ps1`.
+- Optional local command runner with `tools/factory.ps1` for safe checks and read-only status views.
+- Optional local JSONL events under ignored `logs/` paths for troubleshooting breadcrumbs.
+- File-based task records for coordination without external task managers or brokers.
 
 Copy [.env.example](.env.example) to `.env` for local non-secret settings. Never commit `.env`, and do not store long-lived GitHub tokens there.
 
@@ -76,6 +79,7 @@ Every phase should update the project checklist, create or revise the required a
 - Engineering quality should scale with the project's purpose, risk, audience, and lifecycle.
 - Existing tools should be considered before building from scratch.
 - Free and accessible tools are preferred when they fit the job.
+- New tools should pass the tool adoption standard before becoming dependencies.
 - JSON is the machine-readable source for agent state.
 - Markdown is mandatory for human-facing context.
 - Memory is a reference layer, not the core runtime.
@@ -112,6 +116,14 @@ Use these phrases in Codex:
 - `run memory`: record lessons learned and reusable patterns after the project is done.
 - `wrap up`: create a session summary.
 
+For local checks without asking Codex to run each underlying script, the optional runner supports commands such as:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File tools\factory.ps1 doctor
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File tools\factory.ps1 validate
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File tools\factory.ps1 toolbox
+```
+
 ## Local Validation
 
 Before committing framework changes, agents should run:
@@ -131,7 +143,14 @@ git config core.hooksPath .githooks
 
 - [Engineering Quality](standards/engineering-quality.md)
 - [Project Rigor Levels](standards/project-rigor-levels.md)
+- [Project Operating Tiers](standards/project-operating-tiers.md)
 - [Stack Profiles](standards/stack-profiles.md)
+- [Human Actions](standards/human-actions.md)
+- [Tool Adoption](standards/tool-adoption.md)
+- [Starter Toolbox](standards/starter-toolbox.md)
+- [Local Logs And Events](standards/local-logs-events.md)
+- [File-Based Task Records](standards/file-based-task-records.md)
+- [Tauri Dependency Audit](standards/tauri-dependency-audit.md)
 - [Environment / Runtime](standards/environment-runtime.md)
 - [Windows Local Development](standards/windows-local-development.md)
 - [Git / GitHub](standards/git-github.md)
@@ -142,4 +161,4 @@ git config core.hooksPath .githooks
 
 ## Current Status
 
-This is v1 planning infrastructure. It is intentionally lightweight: docs, rules, templates, and structure first; automation later.
+This is v1 planning infrastructure with a confirmed script-assisted, local-first MVP direction. It remains intentionally lightweight: docs, rules, templates, paired Markdown/JSON artifacts, and safe local checks first; heavyweight automation later only after it proves necessary.

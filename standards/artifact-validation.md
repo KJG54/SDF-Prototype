@@ -1,6 +1,6 @@
 # Artifact Validation Standard
 
-Use this for artifact checks. `tools/artifact-validate.ps1` automates the lightweight structural checks; this standard remains the source for human review of meaning and project-shaping decisions.
+Use this for artifact checks. `tools/artifact-validate.ps1` automates lightweight structural checks and JSON Schema checks for core artifact families; this standard remains the source for human review of meaning and project-shaping decisions.
 
 The goal is to catch drift between human-readable Markdown and agent-readable JSON without turning every check into a full audit.
 
@@ -21,6 +21,22 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File tools/artifact-validate.
 ```
 
 The tracked pre-commit hook runs the same validator against staged artifact files.
+
+Core schemas live in `contracts/schemas/`. The validator currently applies schemas to project status, project checklists, phase gates, phase summaries, task records, common phase artifacts, human actions, approvals, and the base artifact shape. It also performs lightweight semantic checks for cross-file drift. Legacy project artifacts may be explicitly marked as legacy when they predate the current schemas.
+
+## Automated Semantic Checks
+
+The validator checks these project-shaping relationships:
+
+- `status.json` checklist file references point to existing checklist files;
+- `status.json` and `project-checklist.json` agree on project name, slug, current phase, and open questions;
+- the current phase appears in the checklist by phase id or phase name;
+- non-current phases should not be marked `in-progress`, `blocked`, or `ready-for-gate`;
+- project `current_phase_gate` uses the same vocabulary as phase gate artifacts: `pending`, `passed`, `blocked`, or `deferred-with-approval`;
+- passed phase gates require approved human approval, Markdown/JSON alignment, security/privacy check, no unresolved current-phase errors, completed or deferred human actions, and no blocking questions;
+- `deferred-with-approval` phase gates require human approval and at least one deferred issue.
+
+These checks are intentionally narrow. They catch contradictions in the state model; they do not replace human review of scope, quality, architecture, or acceptance.
 
 ## What Counts As A Pair
 
@@ -48,6 +64,8 @@ For each pair, confirm:
 
 - both files exist;
 - the JSON parses;
+- applicable JSON Schema checks pass or legacy warnings are explicitly understood;
+- automated semantic checks pass;
 - the artifact id, type, project, phase, and status fields agree where those concepts exist;
 - the latest decision in Markdown matches the structured decision or status in JSON;
 - open questions match;

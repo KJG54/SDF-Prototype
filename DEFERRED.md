@@ -6,12 +6,11 @@ Use this file for known useful work that should not be implemented in v1 without
 
 - `factory` CLI implementation
 - Native Codex command registration
-- Artifact validation tooling
-- Full phase-gate enforcement tooling
+- Full phase-gate enforcement tooling beyond current validation and semantic checks
 - Chroma or equivalent memory index
-- Automated audit commands
-- Dependency reproducibility checks for generated projects
-- Rust/Tauri supply-chain audit guidance
+- Automated audit commands beyond the current local runner checks
+- Broad dependency reproducibility checks for generated projects across stacks
+- Automated Rust/Tauri supply-chain audit tooling beyond current guidance
 - Automated model routing
 - GUI for nontechnical users
 - GitHub repo creation and push automation
@@ -22,6 +21,16 @@ Use this file for known useful work that should not be implemented in v1 without
 - Generated-project nested-repository migration strategy
 - Advanced project backlog system
 - Installer packaging playbooks for desktop apps
+- Cleanup workflow automation after the manual cleanup decision process is proven
+- Idea intake schema and runner support beyond the documented plan
+
+## No Longer Deferred As Whole Items
+
+- Lightweight artifact validation exists through `tools/artifact-validate.ps1`.
+- Core JSON Schema contracts are wired into artifact validation.
+- Lightweight semantic checks now cover project state references, status/checklist identity drift, active phase alignment, phase-gate approval consistency, and blocking gate conditions.
+- Rust/Tauri dependency audit guidance exists as documentation and is connected to relevant standards and phase docs.
+- File-based task records and local JSONL events exist as local-first coordination support.
 
 ## Rule
 

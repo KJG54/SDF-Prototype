@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "review-report.schema.json",
+  "title": "Software Factory Review Report",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "project",
+    "requirements_match",
+    "what_works_well",
+    "gaps_or_concerns",
+    "known_issues",
+    "security_privacy_review",
+    "deferred_ideas",
+    "recommendation",
+    "human_decision"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "type": "string" },
+    "project": { "type": "string" },
+    "requirements_match": { "type": "string" },
+    "what_works_well": { "type": "array" },
+    "gaps_or_concerns": { "type": "array" },
+    "known_issues": { "type": "array" },
+    "security_privacy_review": {
+      "type": "object",
+      "required": [
+        "credential_handling_checked",
+        "secrets_or_tokens_found_in_tracked_files",
+        "dependency_risk_checked",
+        "deployment_surface_checked",
+        "browser_webview_surfaces_checked",
+        "notes"
+      ]
+    },
+    "deferred_ideas": { "type": "array" },
+    "recommendation": { "type": "string" },
+    "human_decision": { "type": "string" }
+  }
+}

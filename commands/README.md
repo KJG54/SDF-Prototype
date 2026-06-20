@@ -8,11 +8,13 @@ See [contracts.md](contracts.md) for the command behavior, checklist state trans
 
 Use [../standards/artifact-validation.md](../standards/artifact-validation.md) for manual Markdown/JSON pair checks until validation is automated.
 
+For local repeatable checks and read-only status views, use the optional repo-local runner documented in [local-runner.md](local-runner.md). It does not replace Codex workflow prompts or approval gates.
+
 ## Prompts
 
 | Say this in Codex | Reserved command name | Purpose |
 | --- | --- | --- |
-| `start a new project` | `/start` | create or continue the new-project startup checklist |
+| `start a new project` | `/start` | create or continue startup, including the operating tier and project operating model |
 | `run vision` | `/vision` | start or continue the Vision Interview |
 | `run requirements` | `/requirements` | create or revise requirements |
 | `run architecture` | `/architecture` | choose or revise stack and architecture |
@@ -35,6 +37,8 @@ Use [../standards/artifact-validation.md](../standards/artifact-validation.md) f
 Workflow prompts should never bypass approval gates.
 
 Future command automation should fail closed when required artifacts, unresolved errors, human actions, or phase approval are missing.
+
+The local runner currently wraps only safe local checks and read-only views. It must not create projects, advance phases, approve gates, install tools, publish, push, or deploy.
 
 ## Project Checklist Behavior
 
