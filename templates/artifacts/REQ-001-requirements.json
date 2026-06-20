@@ -11,6 +11,16 @@
   "constraints": [],
   "assumptions": [],
   "success_criteria": [],
+  "project_rigor_level": {
+    "level": "",
+    "why_it_fits": "",
+    "quality_implications": {
+      "testing": "",
+      "documentation": "",
+      "security_privacy": "",
+      "shipping": ""
+    }
+  },
   "open_questions": [],
   "approval": {
     "status": "pending",

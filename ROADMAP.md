@@ -16,9 +16,9 @@
 ## Next Recommended Work
 
 1. Add Rust/Tauri dependency audit guidance for desktop apps.
-2. Decide whether to run `cargo audit` locally for Recipe Keeper or record it as a human action.
-3. Clean up legacy Recipe Keeper wrapper artifact-validation warnings.
-4. Test the tightened process with another small project.
+2. Test stack profiles and rigor levels with another small project.
+3. Decide whether to run `cargo audit` locally for Recipe Keeper or record it as a human action.
+4. Clean up legacy Recipe Keeper wrapper artifact-validation warnings.
 
 ## Recently Completed
 
@@ -30,6 +30,7 @@
 - Tightened credential guidance and Review/Gate security checks after external review.
 - Added lightweight artifact validation and wired it into the tracked pre-commit hook.
 - Verified Recipe Keeper dependency reproducibility with a project-local npm cache, clean npm install, locked Cargo metadata, locked Cargo check, and debug desktop build.
+- Added lightweight project rigor levels and known-good stack profiles so architecture choices can become faster and more consistent without adding heavy automation.
 
 ## Later
 
@@ -39,7 +40,7 @@
 - Deeper semantic artifact validation
 - Full phase-gate enforcement
 - Chroma or equivalent memory indexing
-- Tool registry checks
+- Tool registry expansion and lifecycle checks
 - Project audit command
 - Framework audit command
 - Automated model routing

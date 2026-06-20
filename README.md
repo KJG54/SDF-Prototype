@@ -73,6 +73,7 @@ Every phase should update the project checklist, create or revise the required a
 - Unresolved errors block phase advancement unless explicitly deferred.
 - Agents ask questions when uncertainty matters.
 - Professional best practices are the default recommendation.
+- Engineering quality should scale with the project's purpose, risk, audience, and lifecycle.
 - Existing tools should be considered before building from scratch.
 - Free and accessible tools are preferred when they fit the job.
 - JSON is the machine-readable source for agent state.
@@ -128,6 +129,9 @@ git config core.hooksPath .githooks
 
 ## Useful Standards
 
+- [Engineering Quality](standards/engineering-quality.md)
+- [Project Rigor Levels](standards/project-rigor-levels.md)
+- [Stack Profiles](standards/stack-profiles.md)
 - [Environment / Runtime](standards/environment-runtime.md)
 - [Windows Local Development](standards/windows-local-development.md)
 - [Git / GitHub](standards/git-github.md)

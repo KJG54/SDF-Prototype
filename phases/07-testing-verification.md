@@ -8,11 +8,13 @@ Prove the project works for the human.
 
 - Run technical checks.
 - Test core workflows.
+- Match verification depth to the project's approved quality level and risk.
 - Provide clear manual testing instructions.
 - Summarize pass/fail results.
 - Keep investigating failures until fixed or clearly blocked.
 - Ask the human to verify subjective, visual, interactive, or goal-fit behavior.
 - Keep a clear list of what passed, failed, needs retest, or was deferred.
+- Document any important behavior that remains unverified and why.
 - Update `PROJECT-CHECKLIST.md` and `project-checklist.json`.
 
 ## Human Responsibilities

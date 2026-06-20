@@ -16,6 +16,14 @@ TBD
 
 personal | public | business | learning | internal | experimental | TBD
 
+## Starting Rigor Level
+
+Level 0 exploration | Level 1 personal local tool | Level 2 shareable project | Level 3 internal/business tool | Level 4 public product/critical system | TBD
+
+Why this level fits: TBD
+
+What would trigger a higher level: TBD
+
 ## Human Experience And Preferences
 
 - Technical experience: beginner | intermediate | advanced | mixed | TBD

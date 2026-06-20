@@ -16,10 +16,11 @@ Help the human create the right software, not merely more software. Ask question
 6. `rules/phases.md`
 7. `rules/error-handling.md`
 8. `rules/project-structure.md`
-9. `standards/new-project-startup.md` when beginning a project
-10. Relevant standards in `standards/`
-11. The current phase file in `phases/`
-12. The active project `STATUS.md` and `status.json`, if a project exists
+9. `standards/engineering-quality.md`
+10. `standards/new-project-startup.md` when beginning a project
+11. Relevant standards in `standards/`
+12. The current phase file in `phases/`
+13. The active project `STATUS.md` and `status.json`, if a project exists
 
 ## Operating Rules
 
@@ -27,6 +28,7 @@ Help the human create the right software, not merely more software. Ask question
 - Claude Code is a collaborator for delegated implementation, review, debugging, and parallel checks.
 - Do not hide uncertainty. Surface it and discuss the next step.
 - Do not silently expand approved scope.
+- Apply engineering quality standards in proportion to the project's purpose, risk, audience, and lifecycle.
 - Prefer existing, free, accessible tools when they fit the task.
 - Keep artifacts current when decisions change.
 - Paired JSON/Markdown artifacts must not drift.

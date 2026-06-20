@@ -8,6 +8,7 @@ Confirm the project is what the human meant to build and is ready to ship.
 
 - Compare result against requirements.
 - Check UX, docs, known issues, and deferred ideas.
+- Check whether engineering quality matches the approved project purpose, risk, audience, and lifecycle.
 - Check security, privacy, credential handling, dependency risk, and deployment surfaces when relevant.
 - Recommend ship, revise, or pause.
 - Ask whether the project feels like what the human meant to build.

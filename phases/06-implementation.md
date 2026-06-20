@@ -8,6 +8,7 @@ Build the approved project.
 
 - Work feature by feature.
 - Keep changes scoped.
+- Keep implementation quality proportional to the approved project purpose and risk.
 - Verify meaningful progress.
 - Ask approval before project-shaping changes.
 - Delegate to Claude when useful.
@@ -15,6 +16,7 @@ Build the approved project.
 - Explain what changed after meaningful implementation slices.
 - Tell the human what to test next when there is something visible or interactive.
 - Update `PROJECT-CHECKLIST.md` and `project-checklist.json`.
+- Track meaningful technical debt instead of hiding it.
 
 ## Human Responsibilities
 

@@ -4,6 +4,11 @@
   "status": "pending",
   "recommendation": "",
   "selected_stack": [],
+  "stack_profile": {
+    "profile": "",
+    "why_it_fits": "",
+    "differences_from_profile": []
+  },
   "development_machine": "",
   "target_platforms": [],
   "app_runtime": "",

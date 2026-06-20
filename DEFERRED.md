@@ -18,7 +18,7 @@ Use this file for known useful work that should not be implemented in v1 without
 - Dedicated success-definition artifact
 - Formal effort, token, and cost estimates in build plans
 - Reusable code templates for specific stacks
-- Tool registry population and lifecycle policy
+- Deeper tool registry lifecycle policy
 - Generated-project nested-repository migration strategy
 - Advanced project backlog system
 - Installer packaging playbooks for desktop apps

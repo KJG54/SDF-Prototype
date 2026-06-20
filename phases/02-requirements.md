@@ -8,6 +8,7 @@ Turn the vision into an approved project contract.
 
 - Create `REQ-001`.
 - Clarify must-have, nice-to-have, out-of-scope, constraints, assumptions, and success criteria.
+- Confirm the project rigor level from `standards/project-rigor-levels.md` or revise it if the requirements change risk, audience, shipping, privacy, or cost.
 - Resolve or explicitly document core open questions.
 - Update `PROJECT-CHECKLIST.md` and `project-checklist.json`.
 - Ask approval before moving on.

@@ -10,6 +10,7 @@ Package and prepare the project for other people to use.
 - Make the project GitHub-ready by default.
 - Distinguish source-code shipping, installer/package shipping, hosted deployment, and store/publication.
 - Prepare README, setup instructions, dependency notes, known issues, and release notes.
+- Confirm that documentation, verification, security review, and operational notes fit the chosen shipping target.
 - If installer/package creation is not part of the chosen shipping target, document it as deferred instead of treating it as a blocker.
 - Ask approval before publishing, pushing, deploying, or creating external resources.
 - Give beginner-safe instructions for any human-run GitHub, deployment, packaging, or terminal steps.

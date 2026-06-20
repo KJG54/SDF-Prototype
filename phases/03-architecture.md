@@ -7,10 +7,12 @@ Choose how the project should be built.
 ## Agent Responsibilities
 
 - Recommend a stack based on the project, not personal preference.
+- Check `standards/stack-profiles.md` for a known-good stack profile before recommending a custom stack.
 - Compare alternatives only when tradeoffs matter.
 - Consider existing tools, libraries, databases, hosting, security, privacy, and cost.
 - Choose a stack that supports the approved target platforms unless the human approves a narrower target.
 - Define an environment strategy for the project.
+- Apply the engineering quality standard in proportion to the project's purpose, risk, audience, and lifecycle.
 - Identify the app runtime, build runtime, package manager, dependency isolation strategy, local services, and system-level prerequisites.
 - Create a step-by-step setup guide for any tools needed to develop, run, test, or package the project.
 - Update `PROJECT-CHECKLIST.md` and `project-checklist.json`.
@@ -51,6 +53,9 @@ Document these before scaffolding:
 - Dependency isolation: project-local dependencies, Python `venv`, Conda environment, Docker, dev container, language-native lockfile, or another justified approach.
 - Local services: databases, queues, emulators, background processes, or containers.
 - System tools: anything that must be installed on the computer rather than inside the project.
+- Quality level: prototype, local tool, internal tool, public app, business-critical system, or another justified category.
+- Quality implications: testing, documentation, security, deployment, observability, and maintenance expectations that fit the chosen quality level.
+- Stack profile: selected known-good profile or `custom`, with reasons.
 
 Project-local dependencies are preferred. System installs are acceptable when they are foundational tools, OS-level requirements, or clearly simpler and safer than local isolation.
 

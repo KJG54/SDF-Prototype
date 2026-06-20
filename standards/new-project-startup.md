@@ -19,6 +19,7 @@ The agent should confirm:
 - Whether the human can install tools.
 - Where the finished project should run.
 - Whether broad platform support is expected.
+- The likely project rigor level from `standards/project-rigor-levels.md`.
 - Whether dependencies should be project-local when practical.
 - Whether Docker, Conda, Python virtual environments, dev containers, or similar isolation tools are acceptable.
 - Known constraints, examples, styles, required tools, privacy concerns, or deadlines.
@@ -30,6 +31,7 @@ The agent should confirm:
 - Separate user-requested scope from agent-suggested ideas.
 - Surface obvious risks early.
 - Create or update `STARTUP-001` when a project begins.
+- Recommend a starting project rigor level, explain what it means, and mark it as revisitable.
 - Move into the Vision Interview only after the startup context is clear enough.
 
 ## Exit Criteria

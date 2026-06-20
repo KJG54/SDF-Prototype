@@ -20,6 +20,8 @@ Uncertainty must start a discussion when it could affect scope, architecture, se
 
 Use professional best practices by default. Explain tradeoffs in plain language and let the human make the final allowed decision.
 
+Engineering quality should be proportional to the project's purpose, risk, audience, and lifecycle. A prototype can be lightweight, but it should still avoid careless architecture, hidden security risks, untracked technical debt, and unverified behavior.
+
 ## Platform Support
 
 Assume projects should be broadly usable by default. Websites and web apps should work on phone-sized and desktop-sized screens. Desktop apps should prefer cross-platform technologies unless the human approves a narrower target or the project has a strong technical reason.

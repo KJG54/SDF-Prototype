@@ -12,7 +12,7 @@ Use this file to track things that should be fixed in Software Factory or in pro
 - Document the generated-project nested repository pattern more explicitly, or decide whether generated workspaces should live outside the framework folder.
 - Add Rust/Tauri audit guidance, such as when to run `cargo audit`, for desktop apps.
 - Clean up legacy Recipe Keeper wrapper artifact-validation warnings so the dry-run project matches the newer artifact rules.
-- Populate the tool registry or keep it clearly marked as a placeholder.
+- Expand the tool registry over time as more stacks are proven through real projects.
 
 ## Resolved
 
@@ -55,3 +55,4 @@ Use this file to track things that should be fixed in Software Factory or in pro
 - External review found that the Recipe Keeper example skipped security review details. Status: resolved with review template updates and Recipe Keeper review artifact notes.
 - External review found that paired artifact validation was manual only. Status: partially resolved with `tools/artifact-validate.ps1`; deeper semantic checks remain deferred.
 - Verified dependency reproducibility for the Recipe Keeper generated project with `npm.cmd ci`, `npm.cmd run build`, `cargo metadata --locked --format-version 1`, `cargo check --locked`, and `npm.cmd run build:desktop:debug`. Broader generated-project guidance can still be expanded as new stacks appear.
+- Added project rigor levels and stack profiles so future projects can start from known-good defaults without committing to heavy templates or automation.

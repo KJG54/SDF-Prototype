@@ -6,6 +6,11 @@
   "who_it_is_for": "",
   "purpose": "",
   "project_context": "",
+  "starting_rigor_level": {
+    "level": "",
+    "why_it_fits": "",
+    "upgrade_triggers": []
+  },
   "human_experience_and_preferences": {
     "technical_experience": "",
     "explanation_level": "balanced",

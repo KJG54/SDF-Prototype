@@ -8,6 +8,14 @@ TBD
 
 - TBD
 
+## Stack Profile
+
+Profile: known profile name | custom | TBD
+
+Why it fits: TBD
+
+Where it differs from the profile: TBD
+
 ## Development Machine
 
 TBD

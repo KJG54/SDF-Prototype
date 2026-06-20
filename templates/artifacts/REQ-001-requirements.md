@@ -36,6 +36,19 @@ TBD
 
 - TBD
 
+## Project Rigor Level
+
+Level: TBD
+
+Why this level fits: TBD
+
+Quality implications:
+
+- Testing: TBD
+- Documentation: TBD
+- Security/privacy: TBD
+- Shipping: TBD
+
 ## Open Questions
 
 - TBD
