@@ -16,6 +16,8 @@
 - Created the local ignored `scaffold-memory-proof` project to validate Scaffold through Memory closeout behavior with a tiny no-dependency static workspace.
 - Recorded Scaffold to Memory proof findings and advanced the operating queue to choosing the next framework focus.
 - Tightened the phase gate schema so security/privacy checks are required and gate/approval status values are schema-constrained.
+- Created the local ignored `dependency-scaffold-proof` project to validate npm/Vite dependency scaffolding, install, build, and validation behavior; human approved closing the proof gate.
+- Added framework guidance from the dependency scaffold proof for Windows npm use and package-manager cache placement.
 
 ## 2026-06-20
 

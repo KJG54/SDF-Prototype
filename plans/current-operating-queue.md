@@ -244,19 +244,43 @@ Approval needed: complete for this schema-hardening pass; still required before 
 
 Operating tier: Tier 2 because schema behavior touches phase gate artifacts.
 
+### Close Dependency-Based Scaffold Proof
+
+Outcome: review the dependency scaffold proof and decide whether to approve the pending Testing / Verification gate.
+
+Result: human approved closing the proof gate. The proof project is marked `completed-proof`, current phase `Testing / Verification`, and gate `passed`.
+
+Acceptance check: the proof scaffolded, installed, and built a Vite TypeScript workspace; artifact validation passes with 304 files checked and 0 warnings; findings are documented in `plans/dependency-scaffold-proof-findings-2026-06-21.md`.
+
+Approval needed: complete for closing the proof gate; still required before changing framework guidance, validator skip rules, or dependency scaffold defaults.
+
+Operating tier: Tier 2 because dependency guidance and validation behavior affect future project scaffolds.
+
+### Apply Dependency Scaffold Guidance
+
+Outcome: fold the dependency scaffold proof lessons into framework guidance.
+
+Result: documented Windows/npm fallback expectations and package-manager cache placement in the environment/runtime and scaffold guidance.
+
+Acceptance check: future dependency-based scaffolds know to use `npm.cmd` when PowerShell blocks `npm.ps1`, and to keep package-manager caches under `workspace/` or another ignored, validator-safe path.
+
+Approval needed: complete for this small guidance update; still required before changing validator skip rules, dependency scaffold defaults, or adopting a specific package manager as a framework default.
+
+Operating tier: Tier 2 because dependency guidance affects future project scaffolds.
+
 ## Now
 
-### Choose Next Framework Focus
+### Start End-Of-Day Test Project
 
-Outcome: decide whether the next useful work is another proof project, framework cleanup, project template verification commands, or a dependency-based scaffold proof.
+Outcome: begin a fresh small test project using the proven local-first Software Factory workflow.
 
-Why now: Phase 0, Architecture/Build Plan, Scaffold, Memory, and the first schema refinement have now been exercised by focused proofs. The next move should be chosen based on the highest-friction remaining gap.
+Why now: phase, schema, scaffold, memory, and dependency behavior have all been validated enough to learn from a real small project instead of another proof.
 
-Acceptance check: the next queue item has a clear outcome, acceptance check, and approval boundary before implementation starts.
+Acceptance check: the test project reaches at least Startup and Vision with compact artifacts, clear operating tier, and no unresolved setup blockers; continue farther only with human approval at gates.
 
-Approval needed: yes before starting or reopening a project, adding automation, changing phase gates, or adopting new tools.
+Approval needed: yes before selecting the project idea, choosing a stack, scaffolding dependencies, or advancing phase gates.
 
-Operating tier: Tier 3 for a small proof or simple project; escalate if scope, risk, automation, or approval behavior changes.
+Operating tier: Tier 3 by default, unless the selected project raises privacy, security, cost, deployment, or architecture risk.
 
 ## Deferred This Cycle
 

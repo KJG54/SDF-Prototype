@@ -18,6 +18,8 @@ Example:
 npm.cmd run dev
 ```
 
+When scaffolding or installing npm dependencies from PowerShell, prefer the selected package manager command from the generated app workspace. If a local npm cache is needed, keep it inside the app workspace or another ignored, validator-safe path.
+
 Human action files should say exactly which folder to run the command from.
 
 ## Native Build Tools

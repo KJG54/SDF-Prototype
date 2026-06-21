@@ -31,6 +31,17 @@ Before scaffolding, document:
 - Docker or dev containers: use when they reduce setup pain, improve reproducibility, or package supporting services cleanly.
 - Native local toolchain: use when the project needs OS-specific compilers, desktop app packaging, mobile/device SDKs, hardware access, or GUI/runtime integration.
 
+## Package Manager Caches
+
+Package-manager caches should not become project artifacts.
+
+For generated projects, keep install caches either:
+
+- inside `projects/<slug>/workspace/` when the package manager supports a local cache path; or
+- in another ignored, validator-safe location.
+
+Avoid placing npm, pnpm, yarn, pip, Cargo, or similar generated cache folders directly in the project wrapper root unless the validator explicitly ignores them. Wrapper-root caches can be mistaken for Software Factory artifacts when they contain Markdown or JSON metadata.
+
 ## Docker Guidance
 
 Docker is useful, but it is not automatically simpler.
