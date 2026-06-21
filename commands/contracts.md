@@ -291,6 +291,8 @@ Reads:
 - Templates
 - Commands
 - Roadmap, deferred work, fixes, and changelog
+- Operating queue
+- Local runner output from `doctor`, `validate`, `secret-scan`, `tasks`, and `events` when useful
 - Git status when available
 
 Writes:
@@ -301,6 +303,15 @@ Must not:
 
 - Rewrite framework policy automatically.
 - Implement deferred automation without approval.
+- Treat runner output as approval or project state.
+
+Required checks:
+
+- Core docs and standards do not contradict each other.
+- Current operating queue matches roadmap/changelog direction.
+- Validation and secret scan results are reported.
+- Stale, missing, or contradictory templates are surfaced.
+- Deferred automation stays deferred unless explicitly approved.
 
 ### Audit Project
 
@@ -316,13 +327,33 @@ Reads:
 - Required artifacts for the current phase
 - Paired Markdown and JSON artifacts
 - Human actions, blockers, deferred items, testing, review, and shipping artifacts
+- Task records, claims, delegations, and handoffs when relevant
+- Local events as breadcrumbs, not authority
+- Local runner output from `status`, `validate`, `secret-scan`, `tasks`, and `events` when useful
 - `standards/project-audit.md`
+- `standards/audit-workflow.md`
 
 Writes:
 
 - `AUDIT-001-project-audit.md`
 - `AUDIT-001-project-audit.json`
 - Checklist updates only if the audit creates a blocker or human action
+
+Must not:
+
+- Approve phase gates.
+- Create approved scope from findings.
+- Change architecture, dependencies, deployment, privacy, security, memory, or shipping direction without human approval.
+
+Required checks:
+
+- Status and checklist agree on current project-shaping facts.
+- Required current-phase artifacts exist or are listed as missing.
+- Markdown/JSON artifact validation result is recorded.
+- Secret scan result is recorded when tracked files may be pushed or published.
+- Open questions, human actions, blockers, errors, and deferred items are surfaced.
+- Task records, handoffs, and local events are summarized when present.
+- Stale or contradictory artifacts are called out.
 
 ### Wrap Up
 

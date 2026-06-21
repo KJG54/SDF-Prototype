@@ -11,9 +11,9 @@ Use this file to track things that should be fixed in Software Factory or in pro
 - Add deeper semantic checks later to enforce phase gates and unresolved-error blocking.
 - Document the generated-project nested repository pattern more explicitly, or decide whether generated workspaces should live outside the framework folder.
 - Expand the tool registry over time as more stacks are proven through real projects.
-- Define a safe cleanup workflow before deleting ignored local files, private memory, generated project output, or placeholder folder notes.
 - Decide whether `roles/README.md` should remain separate or be merged into the agent role docs.
 - Decide whether `commands/potential-future-commands.md` should remain separate or be folded into roadmap/idea intake.
+- Consider adding a dedicated `STARTUP-001` JSON Schema if startup artifact drift appears in future dry runs.
 
 ## Resolved
 
@@ -37,6 +37,8 @@ Use this file to track things that should be fixed in Software Factory or in pro
 - Aligned phase docs so checklist updates and phase gates are explicit for every phase.
 - Ignored local scratchpad idea files so early personal notes stay out of the framework repo.
 - Anchored `projects/` ignore rules so `templates/projects/` is not accidentally excluded.
+- Defined a safe cleanup workflow before deleting ignored local files, private memory, generated project output, or placeholder folder notes.
+- Proved Phase 0 with a local grocery-list dry run that created startup and operating artifacts without scaffolding source code.
 
 ## Findings From Recipe Keeper Dry Run
 

@@ -7,6 +7,15 @@
 - Confirmed the Software Factory MVP direction as script-assisted and local-first, with lightweight runner, validation, schema, and secret-scan support in scope.
 - Updated roadmap, deferred work, and fixes notes so implemented validation/Tauri guidance are no longer listed as wholly deferred.
 - Added project operating tiers and `OPERATING-001` startup templates so each project can choose a full, standard, lean, or fast-MVP operating model before deeper phases begin.
+- Added a rolling operating queue for the next Software Factory work cycle, replacing the unapproved day/week/month draft.
+- Added a cleanup workflow standard for classifying keep, update, merge, archive, delete, and private cleanup candidates before any destructive action.
+- Added the first cleanup review and advanced the operating queue to human-approved cleanup action selection.
+- Selectively kept helpful ignored `Explanation.md` notes and removed boilerplate ignored explanation notes.
+- Added lightweight idea intake guidance, documented `triage ideas` and `route this idea`, and cleaned private idea scratchpad formatting without approving new scope.
+- Proved Phase 0 with a local grocery-list dry run and recorded findings without scaffolding source code.
+- Stopped the Phase 0 proof after Startup by human approval and marked the local proof wrapper completed.
+- Strengthened Codex / Claude coordination rules, delegation and handoff templates, Claude entry guidance, and workflow prompts for bounded collaboration.
+- Added a manual audit workflow, expanded project audit templates, and clarified that audits use runner output as evidence without approving phase gates or changing scope.
 - Added tool adoption and starter toolbox standards, then connected them through the README, roadmap, phase docs, command docs, tool-use rules, and tool registry.
 - Added core JSON Schema contracts and expanded schema coverage across project state, checklists, phase artifacts, approvals, human actions, requirements, architecture, environment setup, build plans, scaffold notes, implementation notes, verification, review, shipping, task records, local events, and memory packets.
 - Wired expanded schema validation into `tools/artifact-validate.ps1`.
@@ -37,7 +46,7 @@
 
 ## 2026-06-17
 
-- Cleared stale active-project state from actory.config.json.
+- Cleared stale active-project state from `factory.config.json`.
 - Added phases/00-startup.md to formalize startup before the Vision Interview.
 - Added named later-phase artifact templates for scaffold, implementation, verification, review, and shipping.
 - Aligned project checklist Markdown and JSON required artifacts for future command automation.

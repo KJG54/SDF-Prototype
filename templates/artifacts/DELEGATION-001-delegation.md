@@ -4,6 +4,10 @@
 
 Claude Code
 
+## Related Task Or Phase
+
+TBD
+
 ## Goal
 
 TBD
@@ -12,7 +16,19 @@ TBD
 
 TBD
 
-## Relevant Files And Artifacts
+## Context Budget Guidance
+
+TBD
+
+## Files Claude Should Read
+
+- TBD
+
+## Files Claude May Edit
+
+- TBD
+
+## Files Claude Must Not Edit
 
 - TBD
 
@@ -24,6 +40,10 @@ TBD
 
 - TBD
 
+## Verification Expectations
+
+- TBD
+
 ## Approval Boundaries
 
 TBD
@@ -32,10 +52,20 @@ TBD
 
 yes | no
 
-## What Claude Must Not Change
+## Codex Review Required Before Integration?
 
-TBD
+yes | no
 
 ## Expected Handoff Format
 
-TBD
+- related delegation or task id
+- summary of work
+- files read
+- files changed
+- verification performed
+- checks not run and why
+- issues found
+- remaining risks or open questions
+- assumptions made
+- recommended next step
+- whether Codex review or a human decision is still needed

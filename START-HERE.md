@@ -43,6 +43,18 @@ These files are safe for human notes:
 
 Notes in those files are context, not automatically approved scope. Codex should discuss them with you before turning them into framework or project changes.
 
+## Idea Intake
+
+If you have a messy list of ideas, tell Codex `triage ideas`.
+
+Codex should preserve your wording, group related notes, recommend where each idea belongs, and mark whether it is raw, proposed, approved, deferred, rejected-for-now, or needs a human decision. Raw notes do not become roadmap work, project scope, dependencies, or automation without approval.
+
+## Audits
+
+If you want to know whether the framework or a project is still healthy, tell Codex `audit framework` or `audit project`.
+
+Audits inspect status, artifacts, validation, secret-scan results, tasks, events, blockers, and stale or contradictory records. Audit findings are recommendations, not automatic approval to change project direction.
+
 ## Important Rule
 
 If something could significantly change the project, cost real money, affect privacy/security, add a major dependency, change architecture, or create deployment/legal risk, Codex must explain it and ask for approval.

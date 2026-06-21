@@ -24,11 +24,10 @@ Software Factory should remain usable as plain Markdown, JSON, templates, and co
 
 ## Next Recommended Work
 
-1. Define a cleanup workflow for redundant, stale, ignored, or generated files before deleting anything.
-2. Use the new operating-tier model in the next real project and tighten it based on what feels useful or too heavy.
-3. Implement the [Idea Intake And Agent Coordination Plan](plans/idea-intake-and-agent-coordination.md) so raw ideas can be routed safely and Codex / Claude Code collaboration has a concrete workflow.
-4. Add a project audit command that runs validation, secret scan, task/event summaries, and status/checklist drift checks.
-5. Go through every phase, one by one and make sure they are efficient and optimized.
+Follow the [Software Factory Operating Queue](plans/current-operating-queue.md) as the current working sequence.
+
+1. Decide later whether durable idea intake artifacts and schemas are needed after the manual workflow is tested.
+2. Go through every phase, one by one and make sure they are efficient and optimized.
 
 ## Recently Completed
 
@@ -54,6 +53,15 @@ Software Factory should remain usable as plain Markdown, JSON, templates, and co
 - Added lightweight semantic artifact checks for project state references, status/checklist identity drift, active phase alignment, and phase gate approval consistency.
 - Confirmed the MVP direction as script-assisted, local-first, and intentionally free of heavyweight infrastructure.
 - Added project operating tiers and `OPERATING-001` so Phase 0 can scale agent effort before each project.
+- Added a rolling operating queue to sequence cleanup, idea intake, audit, and real-project validation work without calendar-bound planning.
+- Added a cleanup workflow standard so redundant, stale, ignored, generated, or confusing files are classified before any destructive action.
+- Added the first cleanup review with candidate actions separated by approval needs.
+- Selectively kept helpful ignored `Explanation.md` notes and removed boilerplate ignored explanation notes.
+- Added lightweight idea intake guidance, documented `triage ideas` and `route this idea`, and cleaned private idea scratchpad formatting without approving new scope.
+- Proved Phase 0 with a local grocery-list dry run and recorded findings without scaffolding source code.
+- Stopped the Phase 0 proof after Startup by human approval and marked the local proof wrapper completed.
+- Strengthened Codex / Claude coordination rules, delegation templates, handoff templates, and workflow prompt docs.
+- Added a manual audit workflow that composes runner checks, status/checklist drift review, task/event summaries, stale artifact checks, and human-reviewed findings without adding audit automation yet.
 
 ## Later
 

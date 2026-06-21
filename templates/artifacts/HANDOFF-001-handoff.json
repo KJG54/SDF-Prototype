@@ -1,10 +1,16 @@
 {
   "id": "HANDOFF-001",
   "type": "handoff",
-  "what_was_done": "",
+  "related_delegation_or_task": "",
+  "summary_of_work": "",
+  "files_read": [],
   "files_changed": [],
   "verification_performed": [],
+  "checks_not_run_and_why": [],
   "issues_found": [],
   "remaining_risks_or_open_questions": [],
-  "recommended_next_step": ""
+  "assumptions_made": [],
+  "recommended_next_step": "",
+  "codex_review_required_before_complete": true,
+  "human_decision_needed": false
 }

@@ -30,6 +30,11 @@ For local repeatable checks and read-only status views, use the optional repo-lo
 | `run project status` | `/project-status` | summarize current project state |
 | `audit framework` | `/audit framework` | inspect Software Factory health |
 | `audit project` | `/audit project` | inspect active project health and produce `AUDIT-001` |
+| `triage ideas` | `/triage-ideas` | classify a batch of raw ideas and route them without approving scope |
+| `route this idea` | `/route-idea` | classify one idea and recommend the right destination |
+| `create Claude delegation` | `/delegate` | create a bounded delegation packet for Claude Code |
+| `review Claude handoff` | `/review-handoff` | inspect Claude's result before decisions or integration |
+| `split work between Codex and Claude` | `/split-work` | recommend a token-conscious collaboration plan |
 | `wrap up` | `/wrap-up` | create a session summary |
 
 ## Rule
@@ -39,6 +44,10 @@ Workflow prompts should never bypass approval gates.
 Future command automation should fail closed when required artifacts, unresolved errors, human actions, or phase approval are missing.
 
 The local runner currently wraps only safe local checks and read-only views. It must not create projects, advance phases, approve gates, install tools, publish, push, or deploy.
+
+Claude coordination prompts produce recommendations, delegation packets, handoff reviews, or task splits. They do not grant Claude broader authority, approve project-shaping decisions, or replace Codex review.
+
+Audit prompts are Codex-led reviews. They may use runner output from `doctor`, `validate`, `secret-scan`, `status`, `tasks`, and `events` as evidence, but audits do not approve phase gates, create scope, or rewrite project direction by themselves.
 
 ## Project Checklist Behavior
 

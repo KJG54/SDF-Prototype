@@ -42,6 +42,18 @@ TBD
 
 TBD
 
+## Runner Checks
+
+- Status: not run | passed | warning | failed | not relevant
+- Validate: not run | passed | warning | failed | not relevant
+- Secret scan: not run | passed | warning | failed | not relevant
+- Tasks: not run | summarized | warning | failed | not relevant
+- Events: not run | summarized | warning | failed | not relevant
+
+## Status / Checklist Drift
+
+TBD
+
 ## Open Questions
 
 - TBD
@@ -55,6 +67,18 @@ TBD
 - TBD
 
 ## Deferred Issues
+
+- TBD
+
+## Task / Claim / Delegation Summary
+
+TBD
+
+## Event Summary
+
+TBD
+
+## Stale Or Contradictory Artifacts
 
 - TBD
 

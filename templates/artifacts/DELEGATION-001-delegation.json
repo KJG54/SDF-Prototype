@@ -2,13 +2,30 @@
   "id": "DELEGATION-001",
   "type": "delegation",
   "delegate": "Claude Code",
+  "related_task_or_phase": "",
   "goal": "",
   "why_claude_is_useful_here": "",
-  "relevant_files_and_artifacts": [],
+  "context_budget_guidance": "",
+  "files_claude_should_read": [],
+  "files_claude_may_edit": [],
+  "files_claude_must_not_edit": [],
   "constraints": [],
   "acceptance_criteria": [],
+  "verification_expectations": [],
   "approval_boundaries": "",
   "human_approval_needed_before_delegation": false,
-  "what_claude_must_not_change": [],
-  "expected_handoff_format": ""
+  "codex_review_required_before_integration": true,
+  "expected_handoff_format": [
+    "related delegation or task id",
+    "summary of work",
+    "files read",
+    "files changed",
+    "verification performed",
+    "checks not run and why",
+    "issues found",
+    "remaining risks or open questions",
+    "assumptions made",
+    "recommended next step",
+    "whether Codex review or a human decision is still needed"
+  ]
 }

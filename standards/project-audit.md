@@ -1,8 +1,8 @@
 # Project Audit Standard
 
-Use this for manual project audits until automated audit commands exist.
+Use this for project-specific audits. See `standards/audit-workflow.md` for the shared framework and project audit workflow.
 
-Audits should inspect and report. They should not silently change project scope, architecture, dependencies, shipping targets, or memory.
+Audits should inspect and report. They should not silently change project scope, architecture, dependencies, approvals, phase state, shipping targets, or memory.
 
 ## When To Audit
 
@@ -32,6 +32,23 @@ Run or recommend a project audit:
 - Testing and verification status.
 - Shipping readiness when relevant.
 - Memory/lessons status when closing a project.
+- Task records, claims, delegations, and handoffs when relevant.
+- Local event summaries, treated as breadcrumbs rather than authority.
+- Stale artifacts or contradictory phase records.
+
+## Suggested Local Checks
+
+Use these as audit evidence:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File tools\factory.ps1 status -Project <slug>
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File tools\factory.ps1 validate
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File tools\factory.ps1 secret-scan
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File tools\factory.ps1 tasks -Project <slug>
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File tools\factory.ps1 events -Project <slug>
+```
+
+The runner output is evidence, not approval. If a runner result disagrees with an artifact, trust the artifact enough to investigate the mismatch.
 
 ## Audit Output
 

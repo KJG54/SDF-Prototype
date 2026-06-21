@@ -113,6 +113,9 @@ Use these phrases in Codex:
 - `run architecture`: choose stack, runtime, dependency, and environment strategy.
 - `run gate`: confirm the current phase is complete before moving on.
 - `run project status`: summarize project state from the checklist and artifacts.
+- `create Claude delegation`: create a bounded delegation packet for Claude Code.
+- `review Claude handoff`: inspect Claude's result before decisions or integration.
+- `split work between Codex and Claude`: recommend a token-conscious collaboration plan.
 - `run memory`: record lessons learned and reusable patterns after the project is done.
 - `wrap up`: create a session summary.
 
@@ -148,6 +151,9 @@ git config core.hooksPath .githooks
 - [Human Actions](standards/human-actions.md)
 - [Tool Adoption](standards/tool-adoption.md)
 - [Starter Toolbox](standards/starter-toolbox.md)
+- [Cleanup Workflow](standards/cleanup-workflow.md)
+- [Idea Intake](standards/idea-intake.md)
+- [Audit Workflow](standards/audit-workflow.md)
 - [Local Logs And Events](standards/local-logs-events.md)
 - [File-Based Task Records](standards/file-based-task-records.md)
 - [Tauri Dependency Audit](standards/tauri-dependency-audit.md)

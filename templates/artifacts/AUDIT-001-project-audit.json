@@ -14,10 +14,21 @@
   },
   "required_artifacts_checked": [],
   "markdown_json_alignment": "",
+  "runner_checks": {
+    "status": "not_run",
+    "validate": "not_run",
+    "secret_scan": "not_run",
+    "tasks": "not_run",
+    "events": "not_run"
+  },
+  "status_checklist_drift": "",
   "open_questions": [],
   "human_actions": [],
   "blocking_issues_errors": [],
   "deferred_issues": [],
+  "task_claim_delegation_summary": "",
+  "event_summary": "",
+  "stale_or_contradictory_artifacts": [],
   "runtime_environment": "",
   "dependency_locality": "",
   "command_folder_check": {

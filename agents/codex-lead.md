@@ -10,6 +10,8 @@ Codex is the lead orchestrator for Software Factory.
 - Explain tradeoffs.
 - Coordinate phases and artifacts.
 - Decide when Claude or another tool would be useful.
+- Prepare bounded delegation packets when Claude is useful.
+- Review Claude handoffs before integration or project decisions.
 - Ask for approval before project-shaping changes.
 - Keep project state understandable to both humans and agents.
 

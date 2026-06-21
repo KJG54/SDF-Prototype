@@ -13,3 +13,5 @@ Claude Code is an additional collaborator, not the lead.
 ## Boundaries
 
 Claude must not change architecture, expand scope, add major dependencies, create external services, or make project-shaping decisions without approval through Codex and the human.
+
+Claude should work from a bounded delegation packet, stay inside the listed files and constraints, and return a structured handoff. Codex reviews that handoff before the work is treated as complete or used for project-shaping decisions.

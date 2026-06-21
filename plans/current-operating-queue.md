@@ -1,0 +1,214 @@
+# Software Factory Operating Queue
+
+## Purpose
+
+This is the current rolling queue for Software Factory framework work.
+
+The queue exists to preserve momentum by reducing friction. It is not a calendar schedule, a commitment to do every listed item, or approval to expand scope.
+
+## Operating Stance
+
+Default tier for this framework cycle: Tier 3, Lean Build.
+
+Use Tier 3 behavior by default:
+
+- ask only the questions needed to avoid bad assumptions;
+- keep artifacts compact;
+- prefer existing framework patterns;
+- keep explanations short unless the human asks for more;
+- preserve approval gates for project-shaping or destructive decisions.
+
+Escalate to Tier 2 or Tier 1 when work affects:
+
+- phase gates;
+- approval behavior;
+- memory behavior;
+- Codex / Claude delegation;
+- security or privacy;
+- project startup;
+- meaningful file deletion, merge, archive, or restructure.
+
+## Active Lanes
+
+### Clear The Runway
+
+Reduce friction in the framework itself.
+
+Includes:
+
+- cleanup workflow;
+- stale files;
+- confusing docs;
+- encoding damage;
+- redundant notes;
+- safe delete, merge, or archive decisions.
+
+### Control The Inflow
+
+Make raw ideas easier to capture, classify, and route without turning them into approved scope.
+
+Includes:
+
+- idea intake;
+- future commands;
+- fixes;
+- deferred work;
+- roadmap routing;
+- approval boundaries for turning ideas into work.
+
+### Prove The Framework
+
+Use Software Factory on real work, then tune the framework from observed friction.
+
+Includes:
+
+- Phase 0 dry runs;
+- `STARTUP-001`;
+- `OPERATING-001`;
+- operating-tier calibration;
+- real-project lessons.
+
+## Queue Rules
+
+- Prioritize friction-based evidence over roadmap inertia.
+- Prefer work that makes the next session easier.
+- Keep each queue item small enough to explain on one screen.
+- Do not delete, merge, archive, or remove guidance without explicit human approval.
+- Keep private vault memory, generated project work, logs, `.env`, and local-only state out of public framework scope unless explicitly approved.
+
+Each queue item should include:
+
+- outcome;
+- why now;
+- acceptance check;
+- approval needed;
+- operating tier.
+
+## Completed This Cycle
+
+### Clear The Runway: Define Cleanup Workflow
+
+Outcome: create a lightweight cleanup workflow for redundant, stale, ignored, generated, or confusing files before removing anything.
+
+Result: documented in `standards/cleanup-workflow.md`.
+
+Acceptance check: Software Factory has a documented cleanup process that can classify files as keep, update, merge, archive, delete, or private; deletion, merge, and archive decisions require explicit approval.
+
+Approval needed: complete for the standard itself; still required for any actual delete, merge, archive, or removal of guidance.
+
+Operating tier: Tier 3 unless the cleanup affects approvals, phase gates, memory, delegation, security, project startup, or major structure.
+
+### Clear The Runway: First Cleanup Review
+
+Outcome: review likely cleanup candidates and produce recommended actions without deleting anything.
+
+Result: documented in `plans/cleanup-review-2026-06-20.md`.
+
+Acceptance check: candidates are listed with a recommended action and rationale; any destructive or structural action is separated for approval.
+
+Approval needed: yes for delete, merge, archive, or guidance removal.
+
+Operating tier: Tier 3, escalating if framework structure or user-facing workflow changes.
+
+### Clear The Runway: Choose Cleanup Actions
+
+Outcome: choose which recommendations from `plans/cleanup-review-2026-06-20.md` should be implemented, deferred, or rejected-for-now.
+
+Result: selectively kept helpful ignored `Explanation.md` files and removed boilerplate ignored explanation notes. Other candidates were deferred or left private.
+
+Acceptance check: approved actions are identified clearly before implementation; private/generated paths remain untouched unless the human asks for disk cleanup.
+
+Approval needed: complete for the selected `Explanation.md` cleanup; still required for every future delete, merge, archive, guidance removal, `.gitignore` behavior change, or private/generated cleanup.
+
+Operating tier: Tier 3 unless the chosen action affects framework structure, startup, approval behavior, memory, delegation, or security.
+
+### Control The Inflow: Lightweight Idea Intake
+
+Outcome: make `FRAMEWORK-IDEAS.md`, `PROJECT-IDEAS.md`, `FIXES.md`, `DEFERRED.md`, and future command notes easier to route and review.
+
+Result: documented `standards/idea-intake.md`, added `triage ideas` and `route this idea` prompts, clarified safe note routing, cleaned private idea scratchpad formatting, and structured future command notes.
+
+Acceptance check: Codex can classify new ideas as raw, proposed, approved, deferred, rejected-for-now, or needs-human-decision and route them to the right destination.
+
+Approval needed: complete for lightweight routing docs and scratchpad formatting; still required before moving a raw idea into approved roadmap, project scope, dependency adoption, or automation.
+
+Operating tier: Tier 3 for documentation; Tier 2 if schemas, templates, or runner behavior are added.
+
+### Prove The Framework: Phase 0 Dry Run
+
+Outcome: test `STARTUP-001`, `OPERATING-001`, operating tiers, and project rigor selection on a small real or toy project.
+
+Result: created local ignored wrapper `projects/phase0-proof-grocery-list/` with status, checklist, `STARTUP-001`, and `OPERATING-001` artifacts. Findings are recorded in `plans/phase0-proof-grocery-list-findings-2026-06-20.md`.
+
+Acceptance check: Phase 0 produces concise startup and operating artifacts, and friction is recorded in `FIXES.md` or private vault memory.
+
+Approval needed: complete for the dry-run wrapper; still required before continuing to Vision Interview, choosing a runtime, scaffolding source code, or treating the proof project as a real build.
+
+Operating tier: chosen during startup; default Tier 3 for a small proof run.
+
+### Prove The Framework: Startup Decision
+
+Outcome: decide whether the Phase 0 proof stops here or continues into the Vision Interview.
+
+Result: human approved stopping the proof after Phase 0. The proof wrapper is marked `completed-proof`, Startup is approved, and Vision Interview is deferred.
+
+Acceptance check: the human chooses stop, continue to Vision Interview, or archive/ignore the proof wrapper.
+
+Approval needed: complete for stopping the proof; still required before reopening, moving to Phase 1 Vision Interview, or scaffolding any code.
+
+Operating tier: Tier 3 if continuing as a small project; revisit if scope grows.
+
+### Codex And Claude Coordination
+
+Outcome: strengthen delegation and handoff guidance after cleanup, intake, and Phase 0 proof have shown the local-first framework path.
+
+Result: updated `rules/coordination.md`, `CLAUDE.md`, agent role notes, `DELEGATION-001`, `HANDOFF-001`, and command prompt docs so Claude collaboration is bounded and Codex-reviewed.
+
+Acceptance check: Codex can explain when Claude is useful, create bounded delegation packets, and review handoffs without letting Claude make project-shaping decisions.
+
+Approval needed: complete for documentation and template strengthening; still required before changing agent autonomy, phase gates, approval behavior, or delegating risky work.
+
+Operating tier: Tier 2 for coordination template changes; Tier 1 if agent responsibility boundaries change.
+
+### Audit Workflow
+
+Outcome: decide whether project and framework audits should remain documented prompts, become runner commands, or use both.
+
+Result: added `standards/audit-workflow.md`, expanded `standards/project-audit.md`, updated `AUDIT-001`, and clarified command contracts so audits compose runner checks as evidence without adding an audit runner command yet.
+
+Why now: audit support is valuable, but cleanup and intake should lead so the audit has clear targets.
+
+Acceptance check: audit behavior is defined around validation, secret scan, status drift, task summaries, event summaries, and stale artifact checks.
+
+Approval needed: complete for the documented workflow; still required before adding automation that writes files or enforces phase behavior.
+
+Operating tier: Tier 2 if runner changes are added.
+
+## Now
+
+### Phase Efficiency Review
+
+Outcome: review each phase for unnecessary ceremony, missing gates, unclear artifacts, and token-heavy behavior.
+
+Why now: phase optimization is important, but it should follow cleanup and at least one Phase 0 proof run.
+
+Acceptance check: phase changes are based on observed friction, and paired Markdown/JSON expectations remain clear.
+
+Approval needed: yes before changing phase gates or approval expectations.
+
+Operating tier: Tier 2 for workflow changes; Tier 1 if approval semantics change.
+
+## Deferred This Cycle
+
+Do not prioritize these unless the human explicitly changes direction:
+
+- GUI work;
+- vector memory or Chroma indexing;
+- external task managers;
+- native Codex command registration;
+- full phase-gate enforcement automation;
+- GitHub repo creation automation;
+- release automation;
+- broad reusable code-template libraries.
+
+These remain possible later, but they should not distract from proving the local-first MVP.

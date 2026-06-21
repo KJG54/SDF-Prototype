@@ -87,6 +87,12 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File tools\factory.ps1 tasks 
 
 The runner does not create or approve tasks. See [../standards/file-based-task-records.md](../standards/file-based-task-records.md).
 
+## Audit Support
+
+There is no `audit` runner command yet. Codex-led audits compose existing read-only runner commands such as `doctor`, `status`, `validate`, `secret-scan`, `tasks`, and `events`.
+
+Runner output is audit evidence only. It does not approve phase gates, change project state, create scope, or replace the human-facing audit report described in [../standards/audit-workflow.md](../standards/audit-workflow.md).
+
 ## Design Direction
 
 The runner is intentionally PowerShell-first because the current development environment is Windows and the repo already uses PowerShell validation scripts.
