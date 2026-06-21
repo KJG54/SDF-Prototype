@@ -1,5 +1,22 @@
 # Changelog
 
+## 2026-06-21
+
+- Completed the Phase Efficiency Review and recorded findings in `plans/phase-efficiency-review-2026-06-21.md`.
+- Tightened Phase 1 so Vision confirms or updates Startup environment context instead of re-asking it from scratch.
+- Added tier-aware right-sizing language to Architecture and Build Plan so lean projects can stay compact without skipping safety checks.
+- Added a Scaffold closeout prompt before moving to Implementation.
+- Clarified that Codex asks whether Claude is useful before delegating implementation, debugging, review, or parallel checks.
+- Clarified that Review depth follows the approved project rigor level and operating tier.
+- Strengthened Memory / Lessons Learned closeout expectations with the named memory packet artifact, final status/checklist update, and project closure prompt.
+- Advanced the operating queue to validating the updated phases on the next real project or focused proof run.
+- Validated the updated Architecture and Build Plan phase wording against `toolbox-smoke-test`, including artifact validation, task listing, local events, and pending gate behavior.
+- Advanced the operating queue to validate Scaffold and Memory closeout behavior when a future project reaches those phases.
+- Approved using `memory/vault/` as an Obsidian-friendly working knowledge base and added private vault conventions, frontmatter guidance, note templates, and a framework decision memory note.
+- Created the local ignored `scaffold-memory-proof` project to validate Scaffold through Memory closeout behavior with a tiny no-dependency static workspace.
+- Recorded Scaffold to Memory proof findings and advanced the operating queue to choosing the next framework focus.
+- Tightened the phase gate schema so security/privacy checks are required and gate/approval status values are schema-constrained.
+
 ## 2026-06-20
 
 - Closed the Portfolio workflow state and normalized gate/status wording for the completed project wrapper.

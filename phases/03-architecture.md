@@ -7,6 +7,7 @@ Choose how the project should be built.
 ## Agent Responsibilities
 
 - Recommend a stack based on the project, not personal preference.
+- Right-size architecture detail to the approved operating tier and rigor level.
 - Check `standards/stack-profiles.md` for a known-good stack profile before recommending a custom stack.
 - Check `standards/starter-toolbox.md` and `tools/registry.md` before recommending tools.
 - Apply `standards/tool-adoption.md` before adding any tool that is not already core or clearly required by the selected stack profile.
@@ -63,6 +64,8 @@ Document these before scaffolding:
 - Tool adoption: any new tool's classification, why it is needed, what it replaces, setup burden, local/cloud status, data/security implications, and replacement path.
 
 Project-local dependencies are preferred. System installs are acceptable when they are foundational tools, OS-level requirements, or clearly simpler and safer than local isolation.
+
+For Tier 3, Tier 4, Level 0, or Level 1 projects, brief entries are enough when the project has no services, no sensitive data, no public deployment, and no meaningful tool risk. Do not skip tool-adoption, security, privacy, or approval checks when they are relevant.
 
 ## Platform Support
 

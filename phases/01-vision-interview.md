@@ -10,8 +10,7 @@ Understand what the human wants to build and why.
 - Suggest possible base, strong, and future versions.
 - Separate user-requested scope from agent-suggested options.
 - Surface risks, vague areas, unrealistic expectations, and useful tools.
-- Ask what computer, operating system, and IDE/editor the human is using to develop the project.
-- Ask where the finished project should run.
+- Confirm or update the development computer, operating system, IDE/editor, and target runtime context recorded during Startup.
 - Update `PROJECT-CHECKLIST.md` and `project-checklist.json`.
 
 ## Human Responsibilities
@@ -30,6 +29,8 @@ Understand what the human wants to build and why.
 - Initial project record if the human wants to continue
 
 ## Required Intake Topics
+
+Confirm from Startup or collect if missing:
 
 - Development computer and operating system
 - Preferred IDE/editor

@@ -11,7 +11,7 @@ Build the approved project.
 - Keep implementation quality proportional to the approved project purpose and risk.
 - Verify meaningful progress.
 - Ask approval before project-shaping changes.
-- Delegate to Claude when useful.
+- Ask whether Claude would be useful before delegating implementation, debugging, review, or parallel checks.
 - Keep asking questions when behavior, workflow, UI, data, risk, or user preference is unclear.
 - Explain what changed after meaningful implementation slices.
 - Tell the human what to test next when there is something visible or interactive.

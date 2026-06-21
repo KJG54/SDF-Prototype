@@ -31,3 +31,7 @@ Create the project skeleton and workspace.
 ## Exit Criteria
 
 The workspace exists and is ready for implementation.
+
+## Closeout Prompt
+
+Summarize the created workspace structure, generated files, approved tools included, setup checks performed, and any missing setup or human actions. Then ask whether the human approves moving to Implementation.

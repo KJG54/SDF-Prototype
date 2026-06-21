@@ -184,19 +184,79 @@ Approval needed: complete for the documented workflow; still required before add
 
 Operating tier: Tier 2 if runner changes are added.
 
-## Now
-
 ### Phase Efficiency Review
 
 Outcome: review each phase for unnecessary ceremony, missing gates, unclear artifacts, and token-heavy behavior.
 
-Why now: phase optimization is important, but it should follow cleanup and at least one Phase 0 proof run.
+Result: documented in `plans/phase-efficiency-review-2026-06-21.md` and applied a small consistency pass across Vision, Architecture, Build Plan, Scaffold, Implementation, Review, and Memory.
 
-Acceptance check: phase changes are based on observed friction, and paired Markdown/JSON expectations remain clear.
+Acceptance check: phase changes are based on observed friction, paired Markdown/JSON expectations remain clear, lean projects can use right-sized architecture and build-plan detail, and Scaffold/Memory have clearer closeout prompts.
 
-Approval needed: yes before changing phase gates or approval expectations.
+Approval needed: complete for the applied phase-doc updates; still required before changing phase-gate semantics, approval requirements, or adding automation.
 
-Operating tier: Tier 2 for workflow changes; Tier 1 if approval semantics change.
+Operating tier: Tier 2 for workflow wording changes.
+
+### Validate Updated Phases On Toolbox Smoke Test
+
+Outcome: use the updated phase docs against an existing focused proof project without scaffolding new source code.
+
+Result: documented in `plans/phase-validation-toolbox-smoke-test-2026-06-21.md`. Architecture right-sizing, Build Plan compactness, runner status, artifact validation, task listing, event breadcrumbs, and pending gate behavior all validated successfully.
+
+Acceptance check: the smoke project could use compact Architecture and Build Plan artifacts without validation warnings, and the gate remained pending rather than advancing without human approval.
+
+Approval needed: complete for this validation pass; still required before starting or reopening a real project, scaffolding source code, changing phase gates, or adding automation.
+
+Operating tier: Tier 3 for this focused validation pass.
+
+### Obsidian Working Knowledge Base Setup
+
+Outcome: decide how long-term memory should work before starting the next test project.
+
+Result: human approved using `memory/vault/` as an Obsidian-friendly working knowledge base. Added private vault conventions, frontmatter guidance, note templates, an attachments folder note, a stronger vault index, and a framework decision memory note.
+
+Acceptance check: memory remains local-first and private, Obsidian is an interface over Markdown rather than a new source of truth, frontmatter supports future Chroma indexing, and broad vector indexing remains deferred.
+
+Approval needed: complete for the private vault setup; still required before adding Obsidian plugins, Chroma/vector indexing, publishing memory, or changing memory promotion rules.
+
+Operating tier: Tier 2 because memory behavior affects future agent continuity.
+
+### Scaffold To Memory Proof
+
+Outcome: validate updated Scaffold and Memory closeout behavior with a tiny local proof project.
+
+Result: created ignored local project `projects/scaffold-memory-proof/` and documented findings in `plans/scaffold-memory-proof-findings-2026-06-21.md`.
+
+Acceptance check: the proof reached `completed-proof`, current phase `memory-lessons`, gate `passed`; workspace files exist; expected content is present; artifact validation passes with 280 files checked and 0 warnings.
+
+Approval needed: complete for this local proof; still required before dependency-based scaffolding, public publishing, or changing gate semantics.
+
+Operating tier: Tier 4 for the proof execution.
+
+### Schema Refinement
+
+Outcome: tighten the phase gate schema based on the Scaffold To Memory proof finding.
+
+Result: documented in `plans/schema-refinement-2026-06-21.md`. `contracts/schemas/phase-gate.schema.json` now requires `security_privacy_check`, constrains `type` to `phase_gate`, and constrains gate and human approval status values.
+
+Acceptance check: `tools\factory.ps1 validate` passes with 280 files checked and 0 warnings; `tools\factory.ps1 doctor` passes.
+
+Approval needed: complete for this schema-hardening pass; still required before changing approval requirements, adding full gate enforcement automation, or changing phase transition behavior.
+
+Operating tier: Tier 2 because schema behavior touches phase gate artifacts.
+
+## Now
+
+### Choose Next Framework Focus
+
+Outcome: decide whether the next useful work is another proof project, framework cleanup, project template verification commands, or a dependency-based scaffold proof.
+
+Why now: Phase 0, Architecture/Build Plan, Scaffold, Memory, and the first schema refinement have now been exercised by focused proofs. The next move should be chosen based on the highest-friction remaining gap.
+
+Acceptance check: the next queue item has a clear outcome, acceptance check, and approval boundary before implementation starts.
+
+Approval needed: yes before starting or reopening a project, adding automation, changing phase gates, or adopting new tools.
+
+Operating tier: Tier 3 for a small proof or simple project; escalate if scope, risk, automation, or approval behavior changes.
 
 ## Deferred This Cycle
 

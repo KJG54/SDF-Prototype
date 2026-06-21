@@ -22,7 +22,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File tools/artifact-validate.
 
 The tracked pre-commit hook runs the same validator against staged artifact files.
 
-Core schemas live in `contracts/schemas/`. The validator currently applies schemas to project status, project checklists, phase gates, phase summaries, task records, common phase artifacts, human actions, approvals, and the base artifact shape. It also performs lightweight semantic checks for cross-file drift. Legacy project artifacts may be explicitly marked as legacy when they predate the current schemas.
+Core schemas live in `contracts/schemas/`. The validator currently applies schemas to project status, project checklists, phase gates, phase summaries, task records, common phase artifacts, human actions, approvals, and the base artifact shape. Phase gate schemas require the security/privacy check block and constrain gate and approval status values. The validator also performs lightweight semantic checks for cross-file drift. Legacy project artifacts may be explicitly marked as legacy when they predate the current schemas.
 
 ## Automated Semantic Checks
 

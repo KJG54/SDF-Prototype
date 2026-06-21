@@ -11,6 +11,7 @@
     "required_artifacts_present",
     "markdown_json_alignment_checked",
     "errors_fixed",
+    "security_privacy_check",
     "deferred_issues",
     "human_actions",
     "open_questions",
@@ -24,13 +25,20 @@
       "type": "string"
     },
     "type": {
-      "type": "string"
+      "type": "string",
+      "enum": ["phase_gate"]
     },
     "phase": {
       "type": "string"
     },
     "gate_status": {
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "pending",
+        "passed",
+        "blocked",
+        "deferred-with-approval"
+      ]
     },
     "required_artifacts_present": {
       "type": "array",
@@ -102,7 +110,12 @@
       "type": "string"
     },
     "human_approval": {
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "pending",
+        "approved",
+        "rejected"
+      ]
     }
   }
 }

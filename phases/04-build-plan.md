@@ -2,11 +2,12 @@
 
 ## Purpose
 
-Create a complete plan agents can execute from scaffold to ship.
+Create a right-sized plan agents can execute from scaffold to ship.
 
 ## Agent Responsibilities
 
 - Break work into clear tasks.
+- Keep the plan no larger than the approved operating tier and project risk require.
 - Include likely files or areas involved.
 - Add acceptance criteria and verification steps.
 - Include setup, validation, logging, and tool-adoption tasks when the architecture approved new tools.
@@ -30,3 +31,5 @@ Create a complete plan agents can execute from scaffold to ship.
 ## Exit Criteria
 
 The human approves the build plan.
+
+For lean or fast-MVP projects, a one-screen plan is acceptable when it still names the work, acceptance checks, verification, blockers, and approval gates.
