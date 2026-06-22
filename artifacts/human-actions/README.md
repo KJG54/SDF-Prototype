@@ -18,3 +18,5 @@ templates/artifacts/ACTION-001-human-action.json
 ```
 
 Current status: no open framework-level human actions are recorded here.
+
+- `ACTION-001-install-start-project-skill`: complete. The canonical `sf-start` repo skill was installed into the personal Codex skills folder.

@@ -4,7 +4,7 @@ Use this file to track things that should be fixed in Software Factory or in pro
 
 ## Human Notes
 
--
+-fix phase file name problem, going from phase 2-3
 
 ## AI Findings
 

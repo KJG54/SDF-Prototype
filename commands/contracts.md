@@ -130,11 +130,13 @@ Invocation: `start a new project`
 
 Reserved command name: `/start`
 
-Purpose: create or continue startup for a new project.
+Purpose: route the project type to the right playbook, then create or continue startup for a new project.
 
 Reads:
 
 - `START-HERE.md`
+- `playbooks/project-type-router.md`
+- Selected primary playbook from `playbooks/`
 - `standards/new-project-startup.md`
 - `standards/project-operating-tiers.md`
 - `standards/project-rigor-levels.md`
@@ -162,8 +164,16 @@ Writes:
 Gate behavior:
 
 - Startup does not require the same project-shaping approval as later phases.
+- Startup begins by choosing a project type route when the route is not already clear.
+- Supported first-pass route choices are app/web app, website, game, CLI/tool, automation, AI system, data dashboard/report, browser extension, library/package, existing-project feature, Codex skill/command/framework workflow, and generic/unsure.
+- The selected route and playbook must be recorded in `STARTUP-001` and reflected in `OPERATING-001`.
 - Startup should recommend a project operating tier and a starting rigor level before the Vision Interview deepens.
 - The workflow should still ask whether the human wants to continue to Phase 1.
+
+Slash-command note:
+
+- `/start` is reserved for future native command support. It is not currently a project-local Codex slash command picker entry.
+- The usable v1 path is the plain-language prompt `start a new project`, optionally backed by the `sf-start` skill when installed.
 
 ### Phase Workflows
 

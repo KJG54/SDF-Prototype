@@ -1,0 +1,15 @@
+ - I want a multi-agent system that is human led. All session details (full session summaries of whatever was done) will be kept in a longterm memory via an obsidian vault.
+ - side note - I want to make a new chat for everything and keep context down so after it is completed, the chat is thuroughly summarized without missing anything important and then put in a vault and then the chat is good to be deleted. 
+ - I want this framework to ask a lot of questions and be highly educational and visual. I want markdown files to contain mermaid flowcharts to visualize the flow of certain things. 
+ - I want the agents to add a summary after completing each task that teaches the human what is happening when it happens, so no confusion happens in the future.
+ - There should be a few mandatory human gates where human approval is needed to move forward. like after each phase and before a new one.
+ - The beginning of the project should the user filling out a premade sheet that lists questions for the user to answer which is then given to an agent as a prompt to begin the workflow. This sheet should ask questions like what are you trying to make? then lists a few things lips apps, games, websites, etc. it should also ask essential questions for development like where the project will be running, what the user is using to build the project, if they have the necessary equipment or if they are willing to buy it, and other questions that should be asked to ensure the production of the project goes smoothly
+ - side note - when recommending things, always start with free versions.
+ - There should be a set plan for each thing being build. apps have their own plans, games have their own, etc. 
+ - I want AI's to recommend tech stacks at the start of the project making as well. They should give 2-3 options for tech stacks with explanations and why they are recommended. 
+ - I want the project to have a projects folder that is gitignored from the root directory and has a folder per project being built by the sdf. i want each project to be pushed to a new git repo after it is complete. 
+ - The project should be able to be picked up and handed off from and to any agent (claude/codex). There should be a proper handoff system in place to make sure both agents are being utilized properly and to their full potential.
+ - While being build, agents should explain what they are doing. 
+ - At the very beginning of the project, when answering all of the initial questions, I want one of the questions should be how they want to framework to handle the project. They will be able to choose from a few different options. 1 being educational. this one makes the agent teach as they build, making sure the user understands everything being done to the project. Another one could be MVP for an agent that goes through the framework just trying to get the simplest version of the app working and can be improved on later. and then we can have a few other ones that do verying things. 
+ - I want a SFD-explanation.md file made in the root folder that explains the framework from start to finish. much like the software-factory-explained.md file. 
+ - 

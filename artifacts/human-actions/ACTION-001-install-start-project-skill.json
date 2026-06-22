@@ -1,0 +1,27 @@
+{
+  "id": "ACTION-001",
+  "type": "human_action",
+  "status": "complete",
+  "action_type": "recommended",
+  "what_to_do": "Install the canonical sf-start skill from this repo into the personal Codex skills folder.",
+  "why": "The repo copy is canonical, but a personal Codex install makes the skill auto-discoverable in future sessions.",
+  "who_does_this": "human, or agent with approval",
+  "where_to_do_it": "C:\\Users\\kryst\\Code\\Software Factory",
+  "before_you_start": [
+    "Confirm skills\\sf-start\\SKILL.md exists in the repo.",
+    "Confirm you want a personal Codex install at C:\\Users\\kryst\\.codex\\skills\\sf-start."
+  ],
+  "exact_steps": [
+    "Copy the repo skill folder into your personal Codex skills folder.",
+    "Confirm the copied folder contains SKILL.md and agents\\openai.yaml.",
+    "Restart or refresh Codex if the skill does not appear."
+  ],
+  "exact_commands": [
+    "Run from C:\\Users\\kryst\\Code\\Software Factory: Copy-Item -Recurse -Force -LiteralPath .\\skills\\sf-start -Destination C:\\Users\\kryst\\.codex\\skills\\"
+  ],
+  "how_to_verify": "Verified on 2026-06-22: C:\\Users\\kryst\\.codex\\skills\\sf-start exists and contains SKILL.md plus agents\\. Start a new Codex session and ask to use $sf-start to start a new Software Factory project.",
+  "if_something_goes_wrong": "Delete C:\\Users\\kryst\\.codex\\skills\\sf-start, then repeat the copy from the repo source after confirming the repo skill validates.",
+  "what_to_tell_agent": "Tell Codex whether the skill was installed successfully, deferred, or if you want Codex to do the copy with explicit approval.",
+  "agent_can_do_later_with_approval": true,
+  "blocks_current_phase": false
+}

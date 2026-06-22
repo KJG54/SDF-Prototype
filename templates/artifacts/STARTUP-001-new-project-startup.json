@@ -3,6 +3,14 @@
   "type": "new_project_startup",
   "status": "pending",
   "project_idea": "",
+  "project_type_routing": {
+    "selected_project_type": "",
+    "selected_playbook": "",
+    "secondary_playbooks": [],
+    "route_reason": "",
+    "routing_confidence": "",
+    "open_routing_questions": []
+  },
   "who_it_is_for": "",
   "purpose": "",
   "project_context": "",

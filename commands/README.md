@@ -14,7 +14,7 @@ For local repeatable checks and read-only status views, use the optional repo-lo
 
 | Say this in Codex | Reserved command name | Purpose |
 | --- | --- | --- |
-| `start a new project` | `/start` | create or continue startup, including the operating tier and project operating model |
+| `start a new project` | `/start` | route the project type to a playbook, then create or continue startup, including the operating tier and project operating model |
 | `run vision` | `/vision` | start or continue the Vision Interview |
 | `run requirements` | `/requirements` | create or revise requirements |
 | `run architecture` | `/architecture` | choose or revise stack and architecture |
@@ -40,6 +40,8 @@ For local repeatable checks and read-only status views, use the optional repo-lo
 ## Rule
 
 Workflow prompts should never bypass approval gates.
+
+`/start` is a reserved/documented command name for future native command support. Today it should be used as the plain-language prompt `start a new project`, or through the installable `sf-start` skill when available.
 
 Future command automation should fail closed when required artifacts, unresolved errors, human actions, or phase approval are missing.
 

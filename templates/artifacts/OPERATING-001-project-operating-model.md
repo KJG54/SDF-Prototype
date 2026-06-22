@@ -18,6 +18,13 @@ Starting rigor level from `STARTUP-001`: TBD
 
 Safety floor: operating tier does not reduce security, privacy, approval, or verification work required by the project's real risk.
 
+## Project Type Route
+
+- Selected project type from `STARTUP-001`: TBD
+- Primary playbook: TBD
+- Secondary playbooks: TBD
+- How the route changes Startup and Vision: TBD
+
 ## Primary Agent Role
 
 architect | builder | reviewer | educator | product partner | debugger | shipper | memory curator | TBD
@@ -100,4 +107,3 @@ What requires explicit human approval: TBD
 ## Open Questions
 
 - TBD
-

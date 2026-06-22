@@ -4,6 +4,15 @@
 
 TBD
 
+## Project Type Routing
+
+- Selected project type: app | website | game | cli-tool | automation | ai-system | data-dashboard | browser-extension | library | existing-project-feature | software-factory-workflow | generic | TBD
+- Selected playbook: TBD
+- Secondary playbooks: TBD
+- Route reason: TBD
+- Routing confidence: high | medium | low | TBD
+- Open routing questions: TBD
+
 ## Who It Is For
 
 TBD

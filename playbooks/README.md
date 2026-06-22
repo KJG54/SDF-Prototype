@@ -6,6 +6,7 @@ V1 playbooks are general guidance, not rigid scripts. The agent should still cho
 
 ## Initial Playbooks
 
+- project-type-router
 - app
 - website
 - game
@@ -16,4 +17,5 @@ V1 playbooks are general guidance, not rigid scripts. The agent should still cho
 - data-dashboard
 - browser-extension
 - library
+- software-factory-workflow
 - generic

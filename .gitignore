@@ -2,6 +2,7 @@
 /projects/
 /memory/vault/
 /logs/
+/.remember/
 
 # Local project outputs if a project is intentionally unignored later
 /projects/*/workspace/node_modules/

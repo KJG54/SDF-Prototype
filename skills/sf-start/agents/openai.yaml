@@ -1,0 +1,4 @@
+interface:
+  display_name: "SF Start"
+  short_description: "Route new projects into the right playbook"
+  default_prompt: "Use $sf-start to start a new Software Factory project."

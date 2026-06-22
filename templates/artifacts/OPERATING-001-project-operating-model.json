@@ -13,6 +13,12 @@
     "starting_rigor_level": "",
     "safety_floor": "Operating tier does not reduce security, privacy, approval, or verification work required by the project's real risk."
   },
+  "project_type_route": {
+    "selected_project_type": "",
+    "primary_playbook": "",
+    "secondary_playbooks": [],
+    "route_effect_on_startup_and_vision": ""
+  },
   "primary_agent_role": "",
   "agent_posture_personality": "",
   "skills_procedures_likely_needed": [],
@@ -29,4 +35,3 @@
   },
   "open_questions": []
 }
-
